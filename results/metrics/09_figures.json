@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "path": "figures/09_umap_by_population.png",
+      "sha256": "c45b9578c57adaed4686e3faecbe2a67fdc7ee078e241160ebc3d99d5e914e91"
+    },
+    {
+      "path": "figures/09_contingency_kmeans_primary_ten_labels.png",
+      "sha256": "fa77a9a608ef616a7ecc43be1f74c861d9c8502e140cad91d5db17def17a64ab"
+    },
+    {
+      "path": "figures/09_contingency_kmeans_primary_six_lineages.png",
+      "sha256": "d62c7939358bc8d289ae3f835357aac5a90d7905e12dbd6e2ccf43ce9e8ffc09"
+    },
+    {
+      "path": "figures/09_contingency_kmeans_oracle_k10_ten_labels.png",
+      "sha256": "b09bcfbc6b99b126ab975e3fc0c443c7acf38d748ada0860635cf9579572b89b"
+    },
+    {
+      "path": "figures/09_contingency_kmeans_oracle_k10_six_lineages.png",
+      "sha256": "9d25f0969b46ccddc415474617634e75279c23c63691067c099a30cdd9292e9f"
+    },
+    {
+      "path": "figures/09_contingency_leiden_primary_ten_labels.png",
+      "sha256": "73176de033135ced88a710752fbb52d7320f72aad082453e136c3ec62ae94e30"
+    },
+    {
+      "path": "figures/09_contingency_leiden_primary_six_lineages.png",
+      "sha256": "91deae10dabe489fe2f2bcb5192911d0298b355ee27c1135f473d8a4d8ce27d0"
+    },
+    {
+      "path": "figures/09_contingency_technical_k_chosen_ten_labels.png",
+      "sha256": "a90cc69feac75ffa28d424b8b41f43a06a759215f5c01ee2e179deb3c385e8b9"
+    },
+    {
+      "path": "figures/09_contingency_technical_k_chosen_six_lineages.png",
+      "sha256": "b1d4ad8e849673dc0b89f0efb8f82bff2933ee1e9b3c12a874b4fd2d8b1b983c"
+    },
+    {
+      "path": "figures/09_contingency_technical_k10_ten_labels.png",
+      "sha256": "b05449ba2bf40ac1013ffcc28ac17e641103800bfb8da4386f9660aa58c0e3de"
+    },
+    {
+      "path": "figures/09_contingency_technical_k10_six_lineages.png",
+      "sha256": "bdd1fef7b630ee65a3399d23fe97d2e480c1b32fdb7d87c9844cd3b59ada903a"
+    },
+    {
+      "path": "figures/09_ari_summary.png",
+      "sha256": "4c512d783c2e0b9eb5ad8f188eba1ca971496fa21aea53301ee8b527af916769"
+    },
+    {
+      "path": "figures/09_recovery_purity.png",
+      "sha256": "43f4f592af02a46ae50e8ad702a55995977db784e60b497d1b9517b18394b87f"
+    },
+    {
+      "path": "figures/09_technical_by_population.png",
+      "sha256": "080506952f8db1acda32d6e93f53968d7c3b31e35529811636cbe7ccfde89c7e"
+    },
+    {
+      "path": "figures/09_nested_label_test.png",
+      "sha256": "92368c29b5742c6970a93e5897afe4b8a9b200eeeb2bb6219df197310e744b91"
+    },
+    {
+      "path": "figures/09_label_gene_detection.png",
+      "sha256": "fb30e08be725cb6bfe428b40e25b0f053292bbf4006d7f999d78a407695be6a3"
+    }
+  ],
+  "n_files": 16
+}
