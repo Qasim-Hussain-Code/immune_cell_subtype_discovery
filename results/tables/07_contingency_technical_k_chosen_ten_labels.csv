@@ -1,0 +1,11 @@
+label,0,1
+b_cells,8750,1335
+cd14_monocytes,2423,189
+cd34,1012,8220
+cd4_t_helper,10164,1049
+regulatory_t,9428,835
+naive_t,10053,426
+memory_t,8846,1378
+cd56_nk,5949,2436
+cytotoxic_t,9032,1177
+naive_cytotoxic,10931,1022

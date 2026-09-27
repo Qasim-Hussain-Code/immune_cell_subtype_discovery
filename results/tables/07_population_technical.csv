@@ -1,0 +1,11 @@
+population,lineage,n_cells,median_total_counts,median_n_genes,median_pct_mito
+b_cells,B cells,10085,1237.0,478.0,2.1432173
+cd14_monocytes,Monocytes,2612,782.0,382.0,1.84303495
+cd34,CD34+ progenitors,9232,4169.0,1274.0,2.29108715
+cd4_t_helper,CD4 T cells,11213,1326.0,546.0,1.5493867
+regulatory_t,CD4 T cells,10263,1223.0,547.0,1.4975041
+naive_t,CD4 T cells,10479,1186.0,490.0,1.455869
+memory_t,CD4 T cells,10224,1506.0,557.0,1.735358
+cd56_nk,NK cells,8385,1590.0,710.0,2.247191
+cytotoxic_t,CD8 T cells,10209,1630.0,573.0,1.6978668
+naive_cytotoxic,CD8 T cells,11953,1442.0,502.0,2.1449704

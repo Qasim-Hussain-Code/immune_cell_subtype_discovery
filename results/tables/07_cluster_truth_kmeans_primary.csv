@@ -1,0 +1,3 @@
+cluster,n_cells,plurality_lineage,plurality_share,plurality_tie,truth,plurality_population,plurality_population_share
+0,91134,CD4 T cells,0.46267035354532887,False,unresolved,naive_cytotoxic,0.13115851383676783
+1,3521,Monocytes,0.7250781028117013,False,Monocytes,cd14_monocytes,0.7250781028117013

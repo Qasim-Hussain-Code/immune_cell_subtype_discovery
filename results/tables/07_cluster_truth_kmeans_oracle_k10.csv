@@ -1,0 +1,11 @@
+cluster,n_cells,plurality_lineage,plurality_share,plurality_tie,truth,plurality_population,plurality_population_share
+0,24476,CD4 T cells,0.992727569864357,False,CD4 T cells,naive_t,0.4126899820232064
+1,23104,CD8 T cells,0.8160491689750693,False,CD8 T cells,naive_cytotoxic,0.5096520083102493
+2,16601,CD4 T cells,0.8250707788687428,False,CD4 T cells,regulatory_t,0.3570266851394494
+3,10472,B cells,0.9618983957219251,False,B cells,b_cells,0.9618983957219251
+4,8579,NK cells,0.9609511598088355,False,NK cells,cd56_nk,0.9609511598088355
+5,3140,Monocytes,0.771656050955414,False,Monocytes,cd14_monocytes,0.771656050955414
+6,2771,CD34+ progenitors,0.9870083002526164,False,CD34+ progenitors,cd34,0.9870083002526164
+7,2731,CD34+ progenitors,0.9919443427316001,False,CD34+ progenitors,cd34,0.9919443427316001
+8,2337,CD34+ progenitors,0.991869918699187,False,CD34+ progenitors,cd34,0.991869918699187
+9,444,CD34+ progenitors,0.6531531531531531,False,CD34+ progenitors,cd34,0.6531531531531531

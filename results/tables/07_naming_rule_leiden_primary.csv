@@ -1,0 +1,24 @@
+cluster,n_cells,name,truth,correct
+0,17045,CD8 T cells,CD8 T cells,True
+1,11272,CD4 T cells,CD4 T cells,True
+2,10930,CD4 T cells,CD4 T cells,True
+3,10431,B cells,B cells,True
+4,9445,CD4 T cells,CD4 T cells,True
+5,8361,NK cells,NK cells,True
+6,5754,CD4 T cells,CD4 T cells,True
+7,5435,CD8 T cells,CD8 T cells,True
+8,4677,CD34+ progenitors,CD34+ progenitors,True
+9,3772,CD4 T cells,CD4 T cells,True
+10,3425,Monocytes,Monocytes,True
+11,2781,CD34+ progenitors,CD34+ progenitors,True
+12,364,Monocytes,CD34+ progenitors,False
+13,330,CD34+ progenitors,CD34+ progenitors,True
+14,129,CD8 T cells,CD4 T cells,False
+15,115,CD8 T cells,CD8 T cells,True
+16,107,CD8 T cells,CD4 T cells,False
+17,77,CD8 T cells,CD4 T cells,False
+18,75,CD4 T cells,CD4 T cells,True
+19,39,CD4 T cells,CD4 T cells,True
+20,38,CD4 T cells,CD4 T cells,True
+21,34,unresolved,CD8 T cells,False
+22,19,CD8 T cells,CD4 T cells,False

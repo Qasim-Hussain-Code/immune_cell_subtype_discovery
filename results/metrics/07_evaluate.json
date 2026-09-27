@@ -1,0 +1,1478 @@
+{
+  "ari": {
+    "kmeans_oracle_k10": {
+      "six_lineages": {
+        "ci_high": 0.5571734727144105,
+        "ci_low": 0.5489686020806409,
+        "null_max": 0.0015691501410799496,
+        "null_mean": -2.0050151987377523e-06,
+        "null_p2_5": -0.000860996638575678,
+        "null_p97_5": 0.0008875294299863589,
+        "observed": 0.553018067417738,
+        "p_value": 0.000999000999000999
+      },
+      "ten_labels": {
+        "ci_high": 0.44338567620790503,
+        "ci_low": 0.4365794882445639,
+        "null_max": 0.00020809237613288013,
+        "null_mean": 8.117129934360705e-07,
+        "null_p2_5": -0.00013099329303251558,
+        "null_p97_5": 0.00013612881799276235,
+        "observed": 0.4398822237632646,
+        "p_value": 0.000999000999000999
+      }
+    },
+    "kmeans_primary": {
+      "six_lineages": {
+        "ci_high": 0.05512742786568787,
+        "ci_low": 0.051818921680828356,
+        "null_max": 0.0019968230743168474,
+        "null_mean": -1.5782533566508853e-05,
+        "null_p2_5": -0.0010300852850907438,
+        "null_p97_5": 0.001005362283647715,
+        "observed": 0.05343991490022904,
+        "p_value": 0.000999000999000999
+      },
+      "ten_labels": {
+        "ci_high": 0.014373419964674429,
+        "ci_low": 0.01341379909928199,
+        "null_max": 0.00014558688238108425,
+        "null_mean": -1.820111259094401e-06,
+        "null_p2_5": -8.856317397597909e-05,
+        "null_p97_5": 8.909399896535524e-05,
+        "observed": 0.013896864975464069,
+        "p_value": 0.000999000999000999
+      }
+    },
+    "leiden_primary": {
+      "six_lineages": {
+        "ci_high": 0.424495874080941,
+        "ci_low": 0.4164280693697077,
+        "null_max": 0.0009687433784978355,
+        "null_mean": -8.284873557779809e-06,
+        "null_p2_5": -0.0005267066385307642,
+        "null_p97_5": 0.0005418184019866334,
+        "observed": 0.4204208706616686,
+        "p_value": 0.000999000999000999
+      },
+      "ten_labels": {
+        "ci_high": 0.5877868614769529,
+        "ci_low": 0.5797868794071848,
+        "null_max": 0.00017630665808171598,
+        "null_mean": -2.0898846056960274e-06,
+        "null_p2_5": -0.00010336394578047677,
+        "null_p97_5": 0.00010006627713188134,
+        "observed": 0.5836121929958628,
+        "p_value": 0.000999000999000999
+      }
+    },
+    "technical_k10": {
+      "six_lineages": {
+        "ci_high": 0.08921522014961196,
+        "ci_low": 0.08578987852648255,
+        "null_max": 0.001060205426835842,
+        "null_mean": -4.015222157101004e-06,
+        "null_p2_5": -0.0005600561687048402,
+        "null_p97_5": 0.0005950344457399169,
+        "observed": 0.08753320423710277,
+        "p_value": 0.000999000999000999
+      },
+      "ten_labels": {
+        "ci_high": 0.07754773589189685,
+        "ci_low": 0.07441625961324701,
+        "null_max": 0.00019188735837255485,
+        "null_mean": -3.1303322344734408e-06,
+        "null_p2_5": -0.00010301633550810783,
+        "null_p97_5": 0.00010033963186958677,
+        "observed": 0.07601901090036232,
+        "p_value": 0.000999000999000999
+      }
+    },
+    "technical_k_chosen": {
+      "six_lineages": {
+        "ci_high": 0.13329245976575055,
+        "ci_low": 0.12777791259097715,
+        "null_max": 0.0030453656771102897,
+        "null_mean": -3.7868045489991875e-06,
+        "null_p2_5": -0.00161646480887102,
+        "null_p97_5": 0.001773364123701007,
+        "observed": 0.130629456447165,
+        "p_value": 0.000999000999000999
+      },
+      "ten_labels": {
+        "ci_high": 0.03934383518910687,
+        "ci_low": 0.03746346115712902,
+        "null_max": 0.0002410405379170283,
+        "null_mean": -1.0727162570745062e-06,
+        "null_p2_5": -0.00015200197615992546,
+        "null_p97_5": 0.00015580806119928805,
+        "observed": 0.03841819016522422,
+        "p_value": 0.000999000999000999
+      }
+    }
+  },
+  "cluster_truth": {
+    "kmeans_oracle_k10": [
+      {
+        "cluster": 0,
+        "n_cells": 24476,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.4126899820232064,
+        "plurality_share": 0.992727569864357,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 1,
+        "n_cells": 23104,
+        "plurality_lineage": "CD8 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.5096520083102493,
+        "plurality_share": 0.8160491689750693,
+        "plurality_tie": false,
+        "truth": "CD8 T cells"
+      },
+      {
+        "cluster": 2,
+        "n_cells": 16601,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "regulatory_t",
+        "plurality_population_share": 0.3570266851394494,
+        "plurality_share": 0.8250707788687428,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 3,
+        "n_cells": 10472,
+        "plurality_lineage": "B cells",
+        "plurality_population": "b_cells",
+        "plurality_population_share": 0.9618983957219251,
+        "plurality_share": 0.9618983957219251,
+        "plurality_tie": false,
+        "truth": "B cells"
+      },
+      {
+        "cluster": 4,
+        "n_cells": 8579,
+        "plurality_lineage": "NK cells",
+        "plurality_population": "cd56_nk",
+        "plurality_population_share": 0.9609511598088355,
+        "plurality_share": 0.9609511598088355,
+        "plurality_tie": false,
+        "truth": "NK cells"
+      },
+      {
+        "cluster": 5,
+        "n_cells": 3140,
+        "plurality_lineage": "Monocytes",
+        "plurality_population": "cd14_monocytes",
+        "plurality_population_share": 0.771656050955414,
+        "plurality_share": 0.771656050955414,
+        "plurality_tie": false,
+        "truth": "Monocytes"
+      },
+      {
+        "cluster": 6,
+        "n_cells": 2771,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.9870083002526164,
+        "plurality_share": 0.9870083002526164,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 7,
+        "n_cells": 2731,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.9919443427316001,
+        "plurality_share": 0.9919443427316001,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 8,
+        "n_cells": 2337,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.991869918699187,
+        "plurality_share": 0.991869918699187,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 9,
+        "n_cells": 444,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.6531531531531531,
+        "plurality_share": 0.6531531531531531,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      }
+    ],
+    "kmeans_primary": [
+      {
+        "cluster": 0,
+        "n_cells": 91134,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.13115851383676783,
+        "plurality_share": 0.46267035354532887,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 1,
+        "n_cells": 3521,
+        "plurality_lineage": "Monocytes",
+        "plurality_population": "cd14_monocytes",
+        "plurality_population_share": 0.7250781028117013,
+        "plurality_share": 0.7250781028117013,
+        "plurality_tie": false,
+        "truth": "Monocytes"
+      }
+    ],
+    "leiden_primary": [
+      {
+        "cluster": 0,
+        "n_cells": 17045,
+        "plurality_lineage": "CD8 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.6678791434438252,
+        "plurality_share": 0.9838662364329716,
+        "plurality_tie": false,
+        "truth": "CD8 T cells"
+      },
+      {
+        "cluster": 1,
+        "n_cells": 11272,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "regulatory_t",
+        "plurality_population_share": 0.498846699787083,
+        "plurality_share": 0.9962739531582683,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 2,
+        "n_cells": 10930,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.4845379688929552,
+        "plurality_share": 0.9897529734675206,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 3,
+        "n_cells": 10431,
+        "plurality_lineage": "B cells",
+        "plurality_population": "b_cells",
+        "plurality_population_share": 0.9637618636755824,
+        "plurality_share": 0.9637618636755824,
+        "plurality_tie": false,
+        "truth": "B cells"
+      },
+      {
+        "cluster": 4,
+        "n_cells": 9445,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "memory_t",
+        "plurality_population_share": 0.9121228163049232,
+        "plurality_share": 0.9433562731604024,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 5,
+        "n_cells": 8361,
+        "plurality_lineage": "NK cells",
+        "plurality_population": "cd56_nk",
+        "plurality_population_share": 0.9942590599210621,
+        "plurality_share": 0.9942590599210621,
+        "plurality_tie": false,
+        "truth": "NK cells"
+      },
+      {
+        "cluster": 6,
+        "n_cells": 5754,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.7276677094195343,
+        "plurality_share": 0.9958289885297185,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 7,
+        "n_cells": 5435,
+        "plurality_lineage": "CD8 T cells",
+        "plurality_population": "cytotoxic_t",
+        "plurality_population_share": 0.7977920883164673,
+        "plurality_share": 0.823735050597976,
+        "plurality_tie": false,
+        "truth": "CD8 T cells"
+      },
+      {
+        "cluster": 8,
+        "n_cells": 4677,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.9903784477228993,
+        "plurality_share": 0.9903784477228993,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 9,
+        "n_cells": 3772,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "regulatory_t",
+        "plurality_population_share": 0.6993637327677624,
+        "plurality_share": 0.9941675503711559,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 10,
+        "n_cells": 3425,
+        "plurality_lineage": "Monocytes",
+        "plurality_population": "cd14_monocytes",
+        "plurality_population_share": 0.7217518248175182,
+        "plurality_share": 0.7217518248175182,
+        "plurality_tie": false,
+        "truth": "Monocytes"
+      },
+      {
+        "cluster": 11,
+        "n_cells": 2781,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.9845379359942467,
+        "plurality_share": 0.9845379359942467,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 12,
+        "n_cells": 364,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.6318681318681318,
+        "plurality_share": 0.6318681318681318,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 13,
+        "n_cells": 330,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.9878787878787879,
+        "plurality_share": 0.9878787878787879,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 14,
+        "n_cells": 129,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "cd4_t_helper",
+        "plurality_population_share": 0.2558139534883721,
+        "plurality_share": 0.7286821705426356,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 15,
+        "n_cells": 115,
+        "plurality_lineage": "CD8 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.33043478260869563,
+        "plurality_share": 0.5304347826086957,
+        "plurality_tie": false,
+        "truth": "CD8 T cells"
+      },
+      {
+        "cluster": 16,
+        "n_cells": 107,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.18691588785046728,
+        "plurality_share": 0.6822429906542056,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 17,
+        "n_cells": 77,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "regulatory_t",
+        "plurality_population_share": 0.24675324675324675,
+        "plurality_share": 0.7012987012987013,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 18,
+        "n_cells": 75,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "regulatory_t",
+        "plurality_population_share": 0.36,
+        "plurality_share": 0.92,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 19,
+        "n_cells": 39,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.6153846153846154,
+        "plurality_share": 0.9743589743589743,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 20,
+        "n_cells": 38,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "memory_t",
+        "plurality_population_share": 0.5,
+        "plurality_share": 1.0,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 21,
+        "n_cells": 34,
+        "plurality_lineage": "CD8 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.7058823529411765,
+        "plurality_share": 0.8235294117647058,
+        "plurality_tie": false,
+        "truth": "CD8 T cells"
+      },
+      {
+        "cluster": 22,
+        "n_cells": 19,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "memory_t",
+        "plurality_population_share": 0.3157894736842105,
+        "plurality_share": 0.7894736842105263,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      }
+    ],
+    "technical_k10": [
+      {
+        "cluster": 0,
+        "n_cells": 19145,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.22757900235048314,
+        "plurality_share": 0.46576129537738314,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 1,
+        "n_cells": 17801,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "cytotoxic_t",
+        "plurality_population_share": 0.2184708724228976,
+        "plurality_share": 0.4952530756699062,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 2,
+        "n_cells": 15485,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.2283500161446561,
+        "plurality_share": 0.7434291249596383,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 3,
+        "n_cells": 10569,
+        "plurality_lineage": "CD8 T cells",
+        "plurality_population": "cd56_nk",
+        "plurality_population_share": 0.2754281388967736,
+        "plurality_share": 0.30826000567697986,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 4,
+        "n_cells": 8989,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_t",
+        "plurality_population_share": 0.23951496273222828,
+        "plurality_share": 0.6044053843586605,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 5,
+        "n_cells": 8616,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.3050139275766017,
+        "plurality_share": 0.3050139275766017,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 6,
+        "n_cells": 7537,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "b_cells",
+        "plurality_population_share": 0.27093007828048293,
+        "plurality_share": 0.3396576887355712,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 7,
+        "n_cells": 5541,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.9043493954159899,
+        "plurality_share": 0.9043493954159899,
+        "plurality_tie": false,
+        "truth": "CD34+ progenitors"
+      },
+      {
+        "cluster": 8,
+        "n_cells": 884,
+        "plurality_lineage": "B cells",
+        "plurality_population": "b_cells",
+        "plurality_population_share": 0.3042986425339366,
+        "plurality_share": 0.3042986425339366,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      },
+      {
+        "cluster": 9,
+        "n_cells": 88,
+        "plurality_lineage": "NK cells",
+        "plurality_population": "cd56_nk",
+        "plurality_population_share": 0.38636363636363635,
+        "plurality_share": 0.38636363636363635,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      }
+    ],
+    "technical_k_chosen": [
+      {
+        "cluster": 0,
+        "n_cells": 76588,
+        "plurality_lineage": "CD4 T cells",
+        "plurality_population": "naive_cytotoxic",
+        "plurality_population_share": 0.14272470883167077,
+        "plurality_share": 0.5025722045229017,
+        "plurality_tie": false,
+        "truth": "CD4 T cells"
+      },
+      {
+        "cluster": 1,
+        "n_cells": 18067,
+        "plurality_lineage": "CD34+ progenitors",
+        "plurality_population": "cd34",
+        "plurality_population_share": 0.4549731554768362,
+        "plurality_share": 0.4549731554768362,
+        "plurality_tie": false,
+        "truth": "unresolved"
+      }
+    ]
+  },
+  "n_cells": 94655,
+  "naming_scores": {
+    "human_kmeans_primary": {
+      "cell_weighted_accuracy": 1.0,
+      "cluster_accuracy": 1.0,
+      "descriptive_n_finer_match_plurality_population": 1,
+      "descriptive_n_finer_named": 1,
+      "n_clusters": 2,
+      "n_correct": 2,
+      "n_named_unresolved": 1
+    },
+    "rule_kmeans_oracle_k10": {
+      "cell_weighted_accuracy": 0.9953092810733717,
+      "cluster_accuracy": 0.9,
+      "n_clusters": 10,
+      "n_correct": 9,
+      "n_named_unresolved": 0
+    },
+    "rule_kmeans_primary": {
+      "cell_weighted_accuracy": 0.03719824626274365,
+      "cluster_accuracy": 0.5,
+      "n_clusters": 2,
+      "n_correct": 1,
+      "n_named_unresolved": 0
+    },
+    "rule_leiden_primary": {
+      "cell_weighted_accuracy": 0.992287781944958,
+      "cluster_accuracy": 0.7391304347826086,
+      "n_clusters": 23,
+      "n_correct": 17,
+      "n_named_unresolved": 1
+    }
+  },
+  "paired_differences": {
+    "leiden_minus_primary": {
+      "six_lineages": {
+        "arm": "leiden_primary",
+        "ci_high": 0.3714710652307038,
+        "ci_low": 0.36224986481862564,
+        "minus": "kmeans_primary",
+        "observed": 0.3669809557614396,
+        "verdict": "Leiden better"
+      },
+      "ten_labels": {
+        "arm": "leiden_primary",
+        "ci_high": 0.5737699486811157,
+        "ci_low": 0.5660590812129002,
+        "minus": "kmeans_primary",
+        "observed": 0.5697153280203987,
+        "verdict": "Leiden better"
+      }
+    },
+    "oracle_minus_primary": {
+      "six_lineages": {
+        "arm": "kmeans_oracle_k10",
+        "ci_high": 0.5039401946966641,
+        "ci_low": 0.49502196919112884,
+        "minus": "kmeans_primary",
+        "observed": 0.4995781525175089,
+        "verdict": "oracle higher"
+      },
+      "ten_labels": {
+        "arm": "kmeans_oracle_k10",
+        "ci_high": 0.4294124252639631,
+        "ci_low": 0.42267738664767196,
+        "minus": "kmeans_primary",
+        "observed": 0.4259853587878005,
+        "verdict": "oracle higher"
+      }
+    },
+    "oracle_minus_technical_k10": {
+      "six_lineages": {
+        "arm": "kmeans_oracle_k10",
+        "ci_high": 0.46962671436583703,
+        "ci_low": 0.46143103081825476,
+        "minus": "technical_k10",
+        "observed": 0.4654848631806352,
+        "verdict": "beats"
+      },
+      "ten_labels": {
+        "arm": "kmeans_oracle_k10",
+        "ci_high": 0.36756864181417787,
+        "ci_low": 0.3601877439042495,
+        "minus": "technical_k10",
+        "observed": 0.36386321286290224,
+        "verdict": "beats"
+      }
+    },
+    "primary_minus_technical_k_chosen": {
+      "six_lineages": {
+        "arm": "kmeans_primary",
+        "ci_high": -0.07364359521867019,
+        "ci_low": -0.08066809057295528,
+        "minus": "technical_k_chosen",
+        "observed": -0.07718954154693597,
+        "verdict": "does not beat"
+      },
+      "ten_labels": {
+        "arm": "kmeans_primary",
+        "ci_high": -0.02337425416256229,
+        "ci_low": -0.025639597428192322,
+        "minus": "technical_k_chosen",
+        "observed": -0.024521325189760152,
+        "verdict": "does not beat"
+      }
+    }
+  },
+  "populations": {
+    "b_cells": {
+      "lineage": "B cells",
+      "median_n_genes": 478.0,
+      "median_pct_mito": 2.1432173,
+      "median_total_counts": 1237.0,
+      "n_cells": 10085
+    },
+    "cd14_monocytes": {
+      "lineage": "Monocytes",
+      "median_n_genes": 382.0,
+      "median_pct_mito": 1.84303495,
+      "median_total_counts": 782.0,
+      "n_cells": 2612
+    },
+    "cd34": {
+      "lineage": "CD34+ progenitors",
+      "median_n_genes": 1274.0,
+      "median_pct_mito": 2.29108715,
+      "median_total_counts": 4169.0,
+      "n_cells": 9232
+    },
+    "cd4_t_helper": {
+      "lineage": "CD4 T cells",
+      "median_n_genes": 546.0,
+      "median_pct_mito": 1.5493867,
+      "median_total_counts": 1326.0,
+      "n_cells": 11213
+    },
+    "cd56_nk": {
+      "lineage": "NK cells",
+      "median_n_genes": 710.0,
+      "median_pct_mito": 2.247191,
+      "median_total_counts": 1590.0,
+      "n_cells": 8385
+    },
+    "cytotoxic_t": {
+      "lineage": "CD8 T cells",
+      "median_n_genes": 573.0,
+      "median_pct_mito": 1.6978668,
+      "median_total_counts": 1630.0,
+      "n_cells": 10209
+    },
+    "memory_t": {
+      "lineage": "CD4 T cells",
+      "median_n_genes": 557.0,
+      "median_pct_mito": 1.735358,
+      "median_total_counts": 1506.0,
+      "n_cells": 10224
+    },
+    "naive_cytotoxic": {
+      "lineage": "CD8 T cells",
+      "median_n_genes": 502.0,
+      "median_pct_mito": 2.1449704,
+      "median_total_counts": 1442.0,
+      "n_cells": 11953
+    },
+    "naive_t": {
+      "lineage": "CD4 T cells",
+      "median_n_genes": 490.0,
+      "median_pct_mito": 1.455869,
+      "median_total_counts": 1186.0,
+      "n_cells": 10479
+    },
+    "regulatory_t": {
+      "lineage": "CD4 T cells",
+      "median_n_genes": 547.0,
+      "median_pct_mito": 1.4975041,
+      "median_total_counts": 1223.0,
+      "n_cells": 10263
+    }
+  },
+  "recovery_purity": {
+    "kmeans_oracle_k10": {
+      "six_lineages": [
+        {
+          "best_cluster": 3,
+          "label": "B cells",
+          "n_label": 10085,
+          "n_label_in_best": 10073,
+          "purity": 0.9618983957219251,
+          "recovery": 0.9988101140307387
+        },
+        {
+          "best_cluster": 5,
+          "label": "Monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2423,
+          "purity": 0.771656050955414,
+          "recovery": 0.9276416539050536
+        },
+        {
+          "best_cluster": 6,
+          "label": "CD34+ progenitors",
+          "n_label": 9232,
+          "n_label_in_best": 2735,
+          "purity": 0.9870083002526164,
+          "recovery": 0.2962521663778163
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD4 T cells",
+          "n_label": 42179,
+          "n_label_in_best": 24298,
+          "purity": 0.992727569864357,
+          "recovery": 0.576068659759596
+        },
+        {
+          "best_cluster": 4,
+          "label": "NK cells",
+          "n_label": 8385,
+          "n_label_in_best": 8244,
+          "purity": 0.9609511598088355,
+          "recovery": 0.9831842576028622
+        },
+        {
+          "best_cluster": 1,
+          "label": "CD8 T cells",
+          "n_label": 22162,
+          "n_label_in_best": 18854,
+          "purity": 0.8160491689750693,
+          "recovery": 0.8507354931865355
+        }
+      ],
+      "ten_labels": [
+        {
+          "best_cluster": 3,
+          "label": "b_cells",
+          "n_label": 10085,
+          "n_label_in_best": 10073,
+          "purity": 0.9618983957219251,
+          "recovery": 0.9988101140307387
+        },
+        {
+          "best_cluster": 5,
+          "label": "cd14_monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2423,
+          "purity": 0.771656050955414,
+          "recovery": 0.9276416539050536
+        },
+        {
+          "best_cluster": 6,
+          "label": "cd34",
+          "n_label": 9232,
+          "n_label_in_best": 2735,
+          "purity": 0.9870083002526164,
+          "recovery": 0.2962521663778163
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd4_t_helper",
+          "n_label": 11213,
+          "n_label_in_best": 8227,
+          "purity": 0.3361251838535708,
+          "recovery": 0.7337019530901632
+        },
+        {
+          "best_cluster": 2,
+          "label": "regulatory_t",
+          "n_label": 10263,
+          "n_label_in_best": 5927,
+          "purity": 0.3570266851394494,
+          "recovery": 0.5775114488940856
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_t",
+          "n_label": 10479,
+          "n_label_in_best": 10101,
+          "purity": 0.4126899820232064,
+          "recovery": 0.9639278557114228
+        },
+        {
+          "best_cluster": 2,
+          "label": "memory_t",
+          "n_label": 10224,
+          "n_label_in_best": 4750,
+          "purity": 0.28612734172640203,
+          "recovery": 0.4645931142410016
+        },
+        {
+          "best_cluster": 4,
+          "label": "cd56_nk",
+          "n_label": 8385,
+          "n_label_in_best": 8244,
+          "purity": 0.9609511598088355,
+          "recovery": 0.9831842576028622
+        },
+        {
+          "best_cluster": 1,
+          "label": "cytotoxic_t",
+          "n_label": 10209,
+          "n_label_in_best": 7079,
+          "purity": 0.3063971606648199,
+          "recovery": 0.6934077774512685
+        },
+        {
+          "best_cluster": 1,
+          "label": "naive_cytotoxic",
+          "n_label": 11953,
+          "n_label_in_best": 11775,
+          "purity": 0.5096520083102493,
+          "recovery": 0.9851083410022589
+        }
+      ]
+    },
+    "kmeans_primary": {
+      "six_lineages": [
+        {
+          "best_cluster": 0,
+          "label": "B cells",
+          "n_label": 10085,
+          "n_label_in_best": 10084,
+          "purity": 0.1106502512783374,
+          "recovery": 0.9999008428358949
+        },
+        {
+          "best_cluster": 1,
+          "label": "Monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2553,
+          "purity": 0.7250781028117013,
+          "recovery": 0.9774119448698315
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD34+ progenitors",
+          "n_label": 9232,
+          "n_label_in_best": 8282,
+          "purity": 0.09087716988171264,
+          "recovery": 0.8970970537261699
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD4 T cells",
+          "n_label": 42179,
+          "n_label_in_best": 42165,
+          "purity": 0.46267035354532887,
+          "recovery": 0.9996680812726713
+        },
+        {
+          "best_cluster": 0,
+          "label": "NK cells",
+          "n_label": 8385,
+          "n_label_in_best": 8382,
+          "purity": 0.09197445519784055,
+          "recovery": 0.9996422182468694
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD8 T cells",
+          "n_label": 22162,
+          "n_label_in_best": 22162,
+          "purity": 0.2431803717602651,
+          "recovery": 1.0
+        }
+      ],
+      "ten_labels": [
+        {
+          "best_cluster": 0,
+          "label": "b_cells",
+          "n_label": 10085,
+          "n_label_in_best": 10084,
+          "purity": 0.1106502512783374,
+          "recovery": 0.9999008428358949
+        },
+        {
+          "best_cluster": 1,
+          "label": "cd14_monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2553,
+          "purity": 0.7250781028117013,
+          "recovery": 0.9774119448698315
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd34",
+          "n_label": 9232,
+          "n_label_in_best": 8282,
+          "purity": 0.09087716988171264,
+          "recovery": 0.8970970537261699
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd4_t_helper",
+          "n_label": 11213,
+          "n_label_in_best": 11205,
+          "purity": 0.12295081967213115,
+          "recovery": 0.9992865424061357
+        },
+        {
+          "best_cluster": 0,
+          "label": "regulatory_t",
+          "n_label": 10263,
+          "n_label_in_best": 10260,
+          "purity": 0.1125814734347225,
+          "recovery": 0.9997076878105817
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_t",
+          "n_label": 10479,
+          "n_label_in_best": 10477,
+          "purity": 0.11496258257072003,
+          "recovery": 0.9998091420937112
+        },
+        {
+          "best_cluster": 0,
+          "label": "memory_t",
+          "n_label": 10224,
+          "n_label_in_best": 10223,
+          "purity": 0.11217547786775517,
+          "recovery": 0.9999021909233177
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd56_nk",
+          "n_label": 8385,
+          "n_label_in_best": 8382,
+          "purity": 0.09197445519784055,
+          "recovery": 0.9996422182468694
+        },
+        {
+          "best_cluster": 0,
+          "label": "cytotoxic_t",
+          "n_label": 10209,
+          "n_label_in_best": 10209,
+          "purity": 0.11202185792349727,
+          "recovery": 1.0
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_cytotoxic",
+          "n_label": 11953,
+          "n_label_in_best": 11953,
+          "purity": 0.13115851383676783,
+          "recovery": 1.0
+        }
+      ]
+    },
+    "leiden_primary": {
+      "six_lineages": [
+        {
+          "best_cluster": 3,
+          "label": "B cells",
+          "n_label": 10085,
+          "n_label_in_best": 10053,
+          "purity": 0.9637618636755824,
+          "recovery": 0.9968269707486366
+        },
+        {
+          "best_cluster": 10,
+          "label": "Monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2472,
+          "purity": 0.7217518248175182,
+          "recovery": 0.9464012251148545
+        },
+        {
+          "best_cluster": 8,
+          "label": "CD34+ progenitors",
+          "n_label": 9232,
+          "n_label_in_best": 4632,
+          "purity": 0.9903784477228993,
+          "recovery": 0.5017331022530329
+        },
+        {
+          "best_cluster": 1,
+          "label": "CD4 T cells",
+          "n_label": 42179,
+          "n_label_in_best": 11230,
+          "purity": 0.9962739531582683,
+          "recovery": 0.2662462362787169
+        },
+        {
+          "best_cluster": 5,
+          "label": "NK cells",
+          "n_label": 8385,
+          "n_label_in_best": 8313,
+          "purity": 0.9942590599210621,
+          "recovery": 0.9914132379248658
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD8 T cells",
+          "n_label": 22162,
+          "n_label_in_best": 16770,
+          "purity": 0.9838662364329716,
+          "recovery": 0.7567006587853082
+        }
+      ],
+      "ten_labels": [
+        {
+          "best_cluster": 3,
+          "label": "b_cells",
+          "n_label": 10085,
+          "n_label_in_best": 10053,
+          "purity": 0.9637618636755824,
+          "recovery": 0.9968269707486366
+        },
+        {
+          "best_cluster": 10,
+          "label": "cd14_monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2472,
+          "purity": 0.7217518248175182,
+          "recovery": 0.9464012251148545
+        },
+        {
+          "best_cluster": 8,
+          "label": "cd34",
+          "n_label": 9232,
+          "n_label_in_best": 4632,
+          "purity": 0.9903784477228993,
+          "recovery": 0.5017331022530329
+        },
+        {
+          "best_cluster": 1,
+          "label": "cd4_t_helper",
+          "n_label": 11213,
+          "n_label_in_best": 4787,
+          "purity": 0.42468062455642297,
+          "recovery": 0.4269151877285294
+        },
+        {
+          "best_cluster": 1,
+          "label": "regulatory_t",
+          "n_label": 10263,
+          "n_label_in_best": 5623,
+          "purity": 0.498846699787083,
+          "recovery": 0.5478904803663646
+        },
+        {
+          "best_cluster": 2,
+          "label": "naive_t",
+          "n_label": 10479,
+          "n_label_in_best": 5296,
+          "purity": 0.4845379688929552,
+          "recovery": 0.5053917358526577
+        },
+        {
+          "best_cluster": 4,
+          "label": "memory_t",
+          "n_label": 10224,
+          "n_label_in_best": 8615,
+          "purity": 0.9121228163049232,
+          "recovery": 0.8426251956181534
+        },
+        {
+          "best_cluster": 5,
+          "label": "cd56_nk",
+          "n_label": 8385,
+          "n_label_in_best": 8313,
+          "purity": 0.9942590599210621,
+          "recovery": 0.9914132379248658
+        },
+        {
+          "best_cluster": 0,
+          "label": "cytotoxic_t",
+          "n_label": 10209,
+          "n_label_in_best": 5386,
+          "purity": 0.3159870929891464,
+          "recovery": 0.5275737094720345
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_cytotoxic",
+          "n_label": 11953,
+          "n_label_in_best": 11384,
+          "purity": 0.6678791434438252,
+          "recovery": 0.9523968878105915
+        }
+      ]
+    },
+    "technical_k10": {
+      "six_lineages": [
+        {
+          "best_cluster": 0,
+          "label": "B cells",
+          "n_label": 10085,
+          "n_label_in_best": 2868,
+          "purity": 0.14980412640376078,
+          "recovery": 0.2843827466534457
+        },
+        {
+          "best_cluster": 4,
+          "label": "Monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 1081,
+          "purity": 0.12025809322505285,
+          "recovery": 0.41385911179173046
+        },
+        {
+          "best_cluster": 7,
+          "label": "CD34+ progenitors",
+          "n_label": 9232,
+          "n_label_in_best": 5011,
+          "purity": 0.9043493954159899,
+          "recovery": 0.5427859618717504
+        },
+        {
+          "best_cluster": 2,
+          "label": "CD4 T cells",
+          "n_label": 42179,
+          "n_label_in_best": 11512,
+          "purity": 0.7434291249596383,
+          "recovery": 0.2729320277863392
+        },
+        {
+          "best_cluster": 3,
+          "label": "NK cells",
+          "n_label": 8385,
+          "n_label_in_best": 2911,
+          "purity": 0.2754281388967736,
+          "recovery": 0.3471675611210495
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD8 T cells",
+          "n_label": 22162,
+          "n_label_in_best": 6330,
+          "purity": 0.33063463045181507,
+          "recovery": 0.2856240411515206
+        }
+      ],
+      "ten_labels": [
+        {
+          "best_cluster": 0,
+          "label": "b_cells",
+          "n_label": 10085,
+          "n_label_in_best": 2868,
+          "purity": 0.14980412640376078,
+          "recovery": 0.2843827466534457
+        },
+        {
+          "best_cluster": 4,
+          "label": "cd14_monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 1081,
+          "purity": 0.12025809322505285,
+          "recovery": 0.41385911179173046
+        },
+        {
+          "best_cluster": 7,
+          "label": "cd34",
+          "n_label": 9232,
+          "n_label_in_best": 5011,
+          "purity": 0.9043493954159899,
+          "recovery": 0.5427859618717504
+        },
+        {
+          "best_cluster": 2,
+          "label": "cd4_t_helper",
+          "n_label": 11213,
+          "n_label_in_best": 2888,
+          "purity": 0.18650306748466258,
+          "recovery": 0.2575581913849996
+        },
+        {
+          "best_cluster": 2,
+          "label": "regulatory_t",
+          "n_label": 10263,
+          "n_label_in_best": 3259,
+          "purity": 0.21046173716499839,
+          "recovery": 0.3175484751047452
+        },
+        {
+          "best_cluster": 2,
+          "label": "naive_t",
+          "n_label": 10479,
+          "n_label_in_best": 3536,
+          "purity": 0.2283500161446561,
+          "recovery": 0.33743677831854185
+        },
+        {
+          "best_cluster": 1,
+          "label": "memory_t",
+          "n_label": 10224,
+          "n_label_in_best": 2993,
+          "purity": 0.16813662153811584,
+          "recovery": 0.29274256651017216
+        },
+        {
+          "best_cluster": 3,
+          "label": "cd56_nk",
+          "n_label": 8385,
+          "n_label_in_best": 2911,
+          "purity": 0.2754281388967736,
+          "recovery": 0.3471675611210495
+        },
+        {
+          "best_cluster": 1,
+          "label": "cytotoxic_t",
+          "n_label": 10209,
+          "n_label_in_best": 3889,
+          "purity": 0.2184708724228976,
+          "recovery": 0.38093838769713
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_cytotoxic",
+          "n_label": 11953,
+          "n_label_in_best": 4357,
+          "purity": 0.22757900235048314,
+          "recovery": 0.3645110014222371
+        }
+      ]
+    },
+    "technical_k_chosen": {
+      "six_lineages": [
+        {
+          "best_cluster": 0,
+          "label": "B cells",
+          "n_label": 10085,
+          "n_label_in_best": 8750,
+          "purity": 0.1142476628192406,
+          "recovery": 0.8676251859196827
+        },
+        {
+          "best_cluster": 0,
+          "label": "Monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2423,
+          "purity": 0.03163680994411657,
+          "recovery": 0.9276416539050536
+        },
+        {
+          "best_cluster": 1,
+          "label": "CD34+ progenitors",
+          "n_label": 9232,
+          "n_label_in_best": 8220,
+          "purity": 0.4549731554768362,
+          "recovery": 0.8903812824956673
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD4 T cells",
+          "n_label": 42179,
+          "n_label_in_best": 38491,
+          "purity": 0.5025722045229017,
+          "recovery": 0.9125631238293938
+        },
+        {
+          "best_cluster": 0,
+          "label": "NK cells",
+          "n_label": 8385,
+          "n_label_in_best": 5949,
+          "purity": 0.07767535384133284,
+          "recovery": 0.7094812164579607
+        },
+        {
+          "best_cluster": 0,
+          "label": "CD8 T cells",
+          "n_label": 22162,
+          "n_label_in_best": 19963,
+          "purity": 0.2606544106126286,
+          "recovery": 0.9007761032397799
+        }
+      ],
+      "ten_labels": [
+        {
+          "best_cluster": 0,
+          "label": "b_cells",
+          "n_label": 10085,
+          "n_label_in_best": 8750,
+          "purity": 0.1142476628192406,
+          "recovery": 0.8676251859196827
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd14_monocytes",
+          "n_label": 2612,
+          "n_label_in_best": 2423,
+          "purity": 0.03163680994411657,
+          "recovery": 0.9276416539050536
+        },
+        {
+          "best_cluster": 1,
+          "label": "cd34",
+          "n_label": 9232,
+          "n_label_in_best": 8220,
+          "purity": 0.4549731554768362,
+          "recovery": 0.8903812824956673
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd4_t_helper",
+          "n_label": 11213,
+          "n_label_in_best": 10164,
+          "purity": 0.1327100851308299,
+          "recovery": 0.9064478730045483
+        },
+        {
+          "best_cluster": 0,
+          "label": "regulatory_t",
+          "n_label": 10263,
+          "n_label_in_best": 9428,
+          "purity": 0.12310022457826292,
+          "recovery": 0.9186397739452402
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_t",
+          "n_label": 10479,
+          "n_label_in_best": 10053,
+          "purity": 0.13126077192249438,
+          "recovery": 0.9593472659604925
+        },
+        {
+          "best_cluster": 0,
+          "label": "memory_t",
+          "n_label": 10224,
+          "n_label_in_best": 8846,
+          "purity": 0.11550112289131456,
+          "recovery": 0.8652190923317684
+        },
+        {
+          "best_cluster": 0,
+          "label": "cd56_nk",
+          "n_label": 8385,
+          "n_label_in_best": 5949,
+          "purity": 0.07767535384133284,
+          "recovery": 0.7094812164579607
+        },
+        {
+          "best_cluster": 0,
+          "label": "cytotoxic_t",
+          "n_label": 10209,
+          "n_label_in_best": 9032,
+          "purity": 0.11792970178095785,
+          "recovery": 0.8847095699872661
+        },
+        {
+          "best_cluster": 0,
+          "label": "naive_cytotoxic",
+          "n_label": 11953,
+          "n_label_in_best": 10931,
+          "purity": 0.14272470883167077,
+          "recovery": 0.9144984522713963
+        }
+      ]
+    }
+  },
+  "runtime_seconds": 1401.5957086086273,
+  "stability_vs_labels": {
+    "kmeans": {
+      "six_lineages": {
+        "max": 0.1830658921941195,
+        "median": 0.1830658921941195,
+        "min": 0.05343991490022904,
+        "n": 20
+      },
+      "ten_labels": {
+        "max": 0.057456401943032295,
+        "median": 0.057456401943032295,
+        "min": 0.013896864975464069,
+        "n": 20
+      }
+    },
+    "leiden": {
+      "six_lineages": {
+        "max": 0.45080514217489764,
+        "median": 0.4167843339535494,
+        "min": 0.41026249857555164,
+        "n": 20
+      },
+      "ten_labels": {
+        "max": 0.5898405572483928,
+        "median": 0.5808741510179423,
+        "min": 0.5707612922770805,
+        "n": 20
+      }
+    }
+  }
+}
