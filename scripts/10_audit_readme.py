@@ -12,7 +12,7 @@ import sys
 from common import ROOT, check_posts, write_metrics
 
 AMERICAN = ["analyze", "normalize", "normalized", "color", "behavior", "center", "favor", "labeled", "modeling", "summarize", "visualize", "optimize"]
-EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️‍⭐⭕←-⇿⌀-⏿⬀-⯿]")
+EMOJI = re.compile("[\U0001F000-\U0001FAFF\u2600-\u27bf\ufe0f\u200d\u2b50\u2b55\u2190-\u21ff\u2300-\u23ff\u2b00-\u2bff]")
 NUMBER = re.compile(r"(?<![A-Za-z0-9])-?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?![A-Za-z0-9])")
 
 
@@ -55,7 +55,7 @@ def main():
     stripped = strip_markdown(readme)
     found = [m.group(0) for m in NUMBER.finditer(stripped)]
     unmatched = sorted({n for n in found if n.replace(",", "") not in allowed})
-    dashes = [c for c in readme if c in "—–"]
+    dashes = [c for c in readme if c in "\u2014\u2013"]
     emojis = EMOJI.findall(readme)
     spellings = sorted({w.lower() for w in AMERICAN for _ in re.finditer(rf"\b{w}\b", stripped, flags=re.I)})
     passed = not unmatched and not dashes and not emojis and not spellings
