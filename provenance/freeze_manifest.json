@@ -1,0 +1,15 @@
+{
+  "files": {
+    "config.yaml": "d131cb8ae758f67ec2bf9ff4985716a65ca5355c8fa8378f5422d1a3bed881d1",
+    "notes/blind_report.md": "896e228db5ba8061c4d2d2ced902ba7657d38fe60abd7e3d171ab1117ba4b80b",
+    "results/assignments/assignments_main.csv.gz": "b0c61d24c24dc8e0b5898a29086f4080456272f1a3ddfcfd98893336a460724e",
+    "results/assignments/assignments_stability.csv.gz": "25e703e08fb627cda26494722e3c8c5ee9a7181ba8f9f5cd91819a917e3fb36a",
+    "results/metrics/04_select_k.json": "7330655177dde6ffc7043395ea0b62b3d9cfd62b25abac51d12dbf5eed4261ff",
+    "results/metrics/05_cluster.json": "9d9adc23aa09637b2d291c7463b376a790613596e975cc7cba3f14ce55a977a0",
+    "results/metrics/06_blind_naming.json": "d74965bea06bbde83562fa9eaf20091a18026cf6c790cc5c8b172285225436ae",
+    "results/tables/06_rule_names_kmeans_oracle_k10.csv": "3c5ac8a5b6d7dec81481cdf971502dd0dc8eb9c1d2a1f581e1a3a2d12b8238ae",
+    "results/tables/06_rule_names_kmeans_primary.csv": "46985b2685aba7d9ec5d157bb388f0f79247d33e24e3b47d74c6fc0fa990e8f3",
+    "results/tables/06_rule_names_leiden_primary.csv": "bebd1f1e30d35089d4fa40ba30fa7dc91d93c7b569d1e84c9de5f0b4a6410245"
+  },
+  "parent_commit": "d216ebab003ae2e6fc66603bdff8786185acba4f"
+}
