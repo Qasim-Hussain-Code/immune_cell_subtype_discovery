@@ -78,4 +78,4 @@ FM5, an unmatched group is not a discovery. Every cluster whose truth is "unreso
 
 ## 6. Order of work
 
-Every grouping, the rule-based names and the owner's names are committed before the answer key is opened. The key is opened only by `scripts/common.py`, function `open_answer_key()`, which refuses unless it is called from script 07 or later, the freeze commit is on the history of HEAD, the frozen files still match `provenance/freeze_manifest.json`, the owner's names are complete and committed after the freeze, and the label file still matches its recorded hash.
+Every grouping, the rule-based names and the second set of names are committed before the answer key is opened. The key is opened only by `scripts/common.py`, function `open_answer_key()`, which refuses unless it is called from script 07 or later, the freeze commit is on the history of HEAD, the frozen files still match `provenance/freeze_manifest.json`, the second set of names is complete and committed after the freeze, and the label file still matches its recorded hash.
