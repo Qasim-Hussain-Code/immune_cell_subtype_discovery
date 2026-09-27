@@ -1,9 +1,11 @@
-"""Script 06: name every cluster from marker genes, before the answer key opens.
+"""Name every cluster from its marker genes before the answer key is opened.
 
-Rule-based names follow the fixed rule in config.yaml (T score first, then CD8
-against CD4, otherwise the best lineage score above zero). Wilcoxon marker
-tables, the blind figures, the human naming template and the blind report are
-written here.
+The rule-based names follow the fixed procedure in config.yaml. A cluster is
+called T when its CD3 genes sit above the rest of the data, and is then
+assigned to CD4 or CD8 by comparing CD8A and CD8B with CD4; any other cluster
+takes the lineage whose markers score highest above zero, or stays unresolved.
+The script also writes the Wilcoxon marker tables, the blind figures, the
+template for the second naming and the blind report.
 """
 import time
 
@@ -28,7 +30,7 @@ from common import (
 
 INTERIM = ROOT / "data" / "interim"
 
-# Allowed finer calls for the human naming template: the ten dataset page names, or "none".
+# Allowed finer calls in the second naming: the ten dataset page names, or "none".
 FINER_CALLS = [
     "CD19+ B Cells",
     "CD14+ Monocytes",
@@ -64,7 +66,7 @@ def gene_columns(var, symbols):
         else:
             found[symbol] = int(hits[0])
     if missing or repeated:
-        raise SystemExit(f"Stop: marker symbols missing {missing} or repeated {repeated} in genes.tsv; log this and ask the owner.")
+        raise SystemExit(f"Stop: marker symbols missing {missing} or repeated {repeated} in genes.tsv; the naming rule needs each marker exactly once.")
     return found
 
 
@@ -259,12 +261,12 @@ def main():
     fig.savefig(ROOT / "figures" / "06_stability.png")
     plt.close(fig)
 
-    # Human naming template for the primary partition.
+    # Template for the second naming of the primary partition.
     primary = names["kmeans_primary"]
     lines = [
-        "# Human naming: primary k-means partition",
+        "# Second naming: primary k-means partition",
         "",
-        "Filled by the owner from marker genes before the answer key opens. Cluster IDs follow column `kmeans_primary` of `results/assignments/assignments_main.csv.gz`, largest cluster first. Marker tables: `results/tables/06_markers_kmeans_primary.csv`. Figures: `figures/06_dotplot_kmeans_primary.png`, `figures/06_umap_kmeans_primary.png`.",
+        "Names are entered from the marker genes before the answer key is opened. Cluster IDs follow column `kmeans_primary` of `results/assignments/assignments_main.csv.gz`, largest cluster first. Marker tables: `results/tables/06_markers_kmeans_primary.csv`. Figures: `figures/06_dotplot_kmeans_primary.png`, `figures/06_umap_kmeans_primary.png`.",
         "",
         "Lineage call, exactly one of: " + ", ".join(f"`{v}`" for v in ncfg["human_vocabulary"]) + ".",
         "",

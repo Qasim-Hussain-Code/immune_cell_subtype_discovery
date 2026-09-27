@@ -1,8 +1,10 @@
-"""Script 00: record the fixed project facts and echo config.yaml.
+"""Record the fixed facts of the project and echo the configuration.
 
-Numbers quoted in the README that come from the posts or the dataset pages,
-rather than from the analysis, are written here so the README audit can find
-them in a metrics file.
+Some numbers in the README come from the published posts or from the 10x
+Genomics dataset pages rather than from the analysis: the purity of each
+population, the cells and reads reported on its page, and the size of the
+blood sample in the 2017 paper. They are written to a metrics file here so
+that the README audit can trace every number it finds to a file.
 """
 from common import TENX_NAMES, load_config, write_metrics
 

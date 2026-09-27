@@ -1,8 +1,8 @@
-"""Script 05: final partitions, stability reruns and the technical baseline.
+"""Fit the final partitions, the stability reruns and the technical baseline.
 
-Writes the assignment files that the freeze commit locks. UMAP coordinates are
-computed here for figures only; nothing downstream uses them for a choice,
-metric or name.
+The assignment files written here are the ones the freeze commit locks. UMAP
+coordinates are computed for figures only; no choice, metric or name uses
+them.
 """
 import itertools
 import time

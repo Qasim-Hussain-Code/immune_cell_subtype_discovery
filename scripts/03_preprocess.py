@@ -1,6 +1,10 @@
-"""Script 03: technical covariates, marker matrix, recipe_zheng17 and PCA.
+"""Technical covariates, the marker matrix, the Zheng et al. recipe and PCA.
 
-The only input is the anonymised pooled matrix.
+The only input is the anonymised pooled matrix. Three measurement numbers per
+cell are kept for the technical baseline, a log-normalised copy of all genes
+is kept for marker-based naming, and the recipe that Scanpy ships under the
+2017 paper's name selects the variable genes, scales them and feeds a
+50-component PCA.
 """
 import time
 

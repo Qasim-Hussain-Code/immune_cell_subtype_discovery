@@ -1,8 +1,9 @@
-"""Script 02: pool all cells, shuffle, anonymise and quarantine the labels.
+"""Pool all cells, shuffle them, replace their names and set the labels aside.
 
-The only pre-freeze script that touches population identity. It writes the
-anonymised pooled matrix (cell IDs only, no obs columns, empty uns) and the
-quarantined label file, and records their hashes. Nothing is printed per
+This is the only script before the freeze that sees which population each
+cell came from. It writes an anonymised pooled matrix, in which each cell
+carries a random-order ID and nothing else, and a separate label file that no
+clustering script may read. Both files are hashed, and nothing is printed per
 population.
 """
 import anndata as ad

@@ -1,4 +1,6 @@
-"""Freeze checks: frozen files still match the manifest, and the freeze commit is on HEAD's history."""
+"""Check that the frozen files still match their recorded hashes and that the
+freeze commit lies on the history of HEAD.
+"""
 import json
 import sys
 from pathlib import Path

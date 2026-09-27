@@ -1,7 +1,8 @@
-"""Script 08: score the Day 63 predictions and the Day 66 failure-mode checks.
+"""Score the Day 63 predictions and the Day 66 failure-mode checks.
 
-Predictions are scored on the label-informed k = 10 partition; the same
-statistics for the primary and Leiden partitions are descriptive only.
+The predictions concern ten labels, so they are scored on the partition that
+was told to make ten groups. The same statistics for the primary k-means and
+Leiden partitions are reported as description only.
 """
 import itertools
 import re

@@ -1,9 +1,11 @@
-"""Script 07: open the answer key and score every frozen partition.
+"""Open the answer key and score every frozen partition.
 
-The first script allowed to read the labels. ARI with paired bootstrap
-confidence intervals and a permutation null for every arm and both keys,
-paired differences with verdicts, recovery and purity, truth per cluster,
-naming scores and stability against the labels.
+This is the first script allowed to read the labels, and it can do so only
+through open_answer_key(). For every partition and both keys it reports the
+adjusted Rand index with a paired bootstrap interval and a permutation null,
+the paired differences behind each verdict, recovery and purity for every
+label, the truth of every cluster, the naming scores, and the stability
+reruns scored against the labels.
 """
 import time
 
@@ -170,7 +172,7 @@ def main():
         truth[arm] = rows
         pd.DataFrame(rows).to_csv(TABLES / f"07_cluster_truth_{arm}.csv", index=False, lineterminator="\n")
 
-    # Naming scores: rule-based names for three partitions, human names for the primary partition.
+    # Naming scores: rule-based names for three partitions, and the second naming for the primary partition.
     naming = {}
     for part in NAMED_PARTITIONS:
         rule = pd.read_csv(TABLES / f"06_rule_names_{part}.csv")

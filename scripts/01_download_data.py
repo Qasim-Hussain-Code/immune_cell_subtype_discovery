@@ -1,8 +1,10 @@
-"""Script 01: download and unpack the ten filtered gene-barcode matrices.
+"""Download and unpack the ten filtered gene-barcode matrices.
 
-Stops at the first failed request, so the owner can confirm the link from the
-dataset page. Records every download in provenance/downloads.tsv. No
-per-population cell counts are written.
+Each archive is fetched from the 10x Genomics server, hashed and logged in
+provenance/downloads.tsv. The script stops at the first failed request,
+because a changed link should be checked against the dataset page rather than
+guessed. No per-population cell counts are written: which population each
+cell came from stays hidden until every grouping is frozen.
 """
 import datetime
 import tarfile
@@ -35,7 +37,7 @@ def main():
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         response = requests.get(url, stream=True, timeout=120)
         if response.status_code != 200:
-            raise SystemExit(f"Stop: download of {key} returned HTTP {response.status_code} for {url}. Ask the owner to confirm the link.")
+            raise SystemExit(f"Stop: download of {key} returned HTTP {response.status_code} for {url}. Check the link in the Output and supplemental files section of the dataset page.")
         with open(archive, "wb") as fh:
             for block in response.iter_content(chunk_size=1 << 20):
                 fh.write(block)

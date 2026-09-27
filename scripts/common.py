@@ -1,8 +1,10 @@
-"""Shared helpers for the immune_cell_subtype_discovery pipeline.
+"""Shared helpers for the pipeline.
 
-This is the only unnumbered script. It holds the config loader, the random
-number streams, hashing, the metrics writer, figure style, git checks and the
-single guarded entry point to the answer key, open_answer_key().
+Configuration, random number streams, hashing, the metrics writer, figure
+style and git checks live here, together with open_answer_key(), the single
+guarded route to the population labels. The clustering scripts import only
+helpers that cannot reach the labels, which tests/test_label_quarantine.py
+verifies.
 """
 from __future__ import annotations
 
@@ -136,14 +138,14 @@ def relabel_by_size(labels):
 
 
 def check_posts():
-    """Rule 0.11: every script after 00 stops unless posts/day_61.md to day_66.md exist and are non-empty."""
+    """Stop unless the six published posts, Days 61 to 66, are present and non-empty."""
     missing = []
     for day in POST_DAYS:
         path = ROOT / "posts" / f"day_{day}.md"
         if not path.is_file() or path.stat().st_size == 0:
             missing.append(path.relative_to(ROOT).as_posix())
     if missing:
-        raise SystemExit("Stop: published posts missing or empty: " + ", ".join(missing) + ". Ask the owner (rule 0.11).")
+        raise SystemExit("Stop: published posts missing or empty: " + ", ".join(missing) + ". They are the pre-registration and must be in place first.")
 
 
 def check_free_space(min_gb=MIN_FREE_GB):
@@ -262,7 +264,7 @@ def verify_freeze_manifest():
     return bad
 
 
-# ---------------------------------------------------------------- human naming
+# ---------------------------------------------------------------- second naming
 
 
 def parse_human_naming(path=None):
@@ -417,9 +419,9 @@ def open_answer_key():
         raise PermissionError("answer key refused: frozen files changed: " + ", ".join(changed))
     problems = validate_human_naming()
     if problems:
-        raise PermissionError("answer key refused: human naming incomplete: " + "; ".join(problems))
+        raise PermissionError("answer key refused: second naming incomplete: " + "; ".join(problems))
     if not human_naming_committed_after(freeze):
-        raise PermissionError("answer key refused: human naming not committed after the freeze")
+        raise PermissionError("answer key refused: second naming not committed after the freeze")
     path = ROOT / qcfg["labels_file"]
     expected = (ROOT / "provenance" / "quarantine_sha256.txt").read_text(encoding="utf-8").split()[0]
     if sha256_file(path) != expected:

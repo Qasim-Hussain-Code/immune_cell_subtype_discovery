@@ -1,5 +1,7 @@
-"""Quarantine checks: blind scripts never reach the labels, the pooled file is anonymous,
-and no evaluation metrics were committed before the freeze."""
+"""Check that the clustering scripts cannot reach the labels, that the pooled
+matrix is anonymous, and that no evaluation results were committed before the
+freeze.
+"""
 import ast
 import re
 import subprocess

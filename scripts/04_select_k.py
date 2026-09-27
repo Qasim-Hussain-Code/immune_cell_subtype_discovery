@@ -1,7 +1,9 @@
-"""Script 04: choose k for k-means and the Leiden resolution by mean silhouette.
+"""Choose the number of k-means groups and the Leiden resolution.
 
-Both curves are scored on the same 10,000-cell subsample in the 50-component
-PCA space. Inertia is recorded for description only.
+Both choices follow the rule published on Day 65: the highest mean silhouette,
+computed on the same fixed 10,000-cell subsample in the 50-component PCA
+space, with ties going to the smaller k or the lower resolution. Inertia is
+recorded for description only and plays no part in the choice.
 """
 import time
 

@@ -1,7 +1,7 @@
-"""Script 09: figures drawn after the answer key opens.
+"""Draw the figures that need the answer key.
 
-UMAP coordinates appear only as pictures. Every figure is listed with its
-SHA-256 in 09_figures.json.
+UMAP coordinates appear only as pictures. Each figure is listed with its
+SHA-256 in 09_figures.json, so any later change to a figure can be detected.
 """
 import numpy as np
 import pandas as pd
