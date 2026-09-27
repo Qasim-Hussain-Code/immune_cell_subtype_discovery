@@ -1,0 +1,429 @@
+{
+  "chapter": 7,
+  "ci_level_percent": 95,
+  "citation": {
+    "article_number": 14049,
+    "doi": "10.1038/ncomms14049",
+    "volume": 8,
+    "year": 2017
+  },
+  "config": {
+    "data": {
+      "batch_correction": "none",
+      "cell_filtering": "none",
+      "cell_ranger_version": "1.1.0",
+      "citation": "Zheng GXY et al. 2017, Nature Communications 8:14049",
+      "doi": "10.1038/ncomms14049",
+      "doublet_removal": "none",
+      "downsampling": "none",
+      "populations": {
+        "b_cells": "B cells",
+        "cd14_monocytes": "Monocytes",
+        "cd34": "CD34+ progenitors",
+        "cd4_t_helper": "CD4 T cells",
+        "cd56_nk": "NK cells",
+        "cytotoxic_t": "CD8 T cells",
+        "memory_t": "CD4 T cells",
+        "naive_cytotoxic": "CD8 T cells",
+        "naive_t": "CD4 T cells",
+        "regulatory_t": "CD4 T cells"
+      },
+      "reference": "hg19",
+      "url_pattern": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/{key}/{key}_filtered_gene_bc_matrices.tar.gz"
+    },
+    "diagnostics": {
+      "distinct_pair": [
+        "naive_t",
+        "memory_t"
+      ],
+      "label_genes": [
+        "CD4",
+        "CD8A",
+        "CD8B",
+        "CD14",
+        "CD19",
+        "IL2RA",
+        "CD34",
+        "PTPRC",
+        "NCAM1"
+      ],
+      "nested_pair": [
+        "cd4_t_helper",
+        "naive_t"
+      ]
+    },
+    "evaluation": {
+      "beats_rule": "lower bound of paired bootstrap 95% CI of the ARI difference > 0",
+      "ci_level": 0.95,
+      "keys": [
+        "ten_labels",
+        "six_lineages"
+      ],
+      "metric": "adjusted_rand_index",
+      "n_bootstrap": 1000,
+      "n_permutations": 1000,
+      "unresolved_share": 0.5
+    },
+    "k_selection": {
+      "criterion": "mean_silhouette",
+      "k_values": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "metric": "euclidean",
+      "space": "pca_50",
+      "subsample_size": 10000,
+      "tie_rule": "round to 4 decimal places; smallest k wins"
+    },
+    "kmeans": {
+      "algorithm": "lloyd",
+      "init": "k-means++",
+      "max_iter": 300,
+      "n_init": 50,
+      "oracle_k": 10,
+      "random_state": 7,
+      "stability_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "tol": 0.0001
+    },
+    "leiden": {
+      "directed": false,
+      "flavor": "igraph",
+      "n_iterations": 2,
+      "n_neighbors": 15,
+      "n_pcs": 50,
+      "random_state": 7,
+      "resolutions": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        1.9,
+        2.0
+      ],
+      "stability_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "tie_rule": "round to 4 decimal places; lowest resolution wins"
+    },
+    "naming": {
+      "cd4_marker": "CD4",
+      "cd8_markers": [
+        "CD8A",
+        "CD8B"
+      ],
+      "human_vocabulary": [
+        "B cells",
+        "Monocytes",
+        "NK cells",
+        "CD34+ progenitors",
+        "CD4 T cells",
+        "CD8 T cells",
+        "unresolved"
+      ],
+      "lineage_markers": {
+        "B cells": [
+          "CD79A",
+          "CD79B",
+          "MS4A1",
+          "CD19"
+        ],
+        "CD34+ progenitors": [
+          "CD34"
+        ],
+        "Monocytes": [
+          "CD14",
+          "LYZ",
+          "S100A8",
+          "S100A9",
+          "FCN1"
+        ],
+        "NK cells": [
+          "GNLY",
+          "NKG7",
+          "KLRF1",
+          "NCAM1"
+        ]
+      },
+      "t_markers": [
+        "CD3D",
+        "CD3E",
+        "CD3G"
+      ],
+      "wilcoxon_top_n": 20
+    },
+    "predictions": {
+      "P1": {
+        "label": "b_cells",
+        "rule": ">= 0.80",
+        "stat": "recovery"
+      },
+      "P2": {
+        "label": "cd14_monocytes",
+        "rule": ">= 0.80",
+        "stat": "recovery"
+      },
+      "P3": {
+        "labels": [
+          "cd56_nk",
+          "cytotoxic_t"
+        ],
+        "rule": ">= 0.10",
+        "stat": "overlap"
+      },
+      "P4": {
+        "label": "cd34",
+        "rule": ">= 0.80",
+        "stat": "recovery"
+      },
+      "P5": {
+        "labels": [
+          "cd4_t_helper",
+          "regulatory_t",
+          "naive_t",
+          "memory_t",
+          "cytotoxic_t",
+          "naive_cytotoxic"
+        ],
+        "rule": "no label has a best cluster with recovery >= 0.80 and purity >= 0.80"
+      },
+      "P6": {
+        "rule": "sub_ari(cd4_t_helper, naive_t) <= sub_ari(naive_t, memory_t)",
+        "stat": "sub_ari"
+      },
+      "scored_on": "kmeans_oracle_k10"
+    },
+    "preprocess": {
+      "log": true,
+      "marker_target_sum": 10000,
+      "mito_prefix": "MT-",
+      "n_pcs": 50,
+      "n_top_genes": 1000,
+      "pca_svd_solver": "arpack",
+      "recipe": "scanpy.pp.recipe_zheng17"
+    },
+    "project": {
+      "chapter": 7,
+      "master_seed": 7,
+      "preregistration_days": [
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "repo": "immune_cell_subtype_discovery",
+      "title": "Immune cell subtype discovery from single-cell RNA-seq"
+    },
+    "quarantine": {
+      "first_script_allowed": 7,
+      "labels_file": "data/interim/labels_quarantine.csv",
+      "max_adjacent_same_label": 0.2,
+      "pooled_file": "data/interim/pooled_anonymised.h5ad"
+    },
+    "rng_streams": {
+      "bootstrap": 3,
+      "permutation": 4,
+      "shuffle": 1,
+      "silhouette_subsample": 2
+    },
+    "technical_baseline": {
+      "features": [
+        "log10_total_counts",
+        "log10_n_genes",
+        "pct_mito"
+      ],
+      "k": [
+        "chosen",
+        10
+      ],
+      "scaling": "zscore"
+    }
+  },
+  "dataset_pages": {
+    "b_cells": {
+      "cells_approx": false,
+      "cells_on_page": 10085,
+      "lineage": "B cells",
+      "purity_approx": true,
+      "purity_percent": 100,
+      "reads_per_cell": 25000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD19+ B Cells"
+    },
+    "cd14_monocytes": {
+      "cells_approx": false,
+      "cells_on_page": 2612,
+      "lineage": "Monocytes",
+      "purity_approx": false,
+      "purity_percent": 98,
+      "reads_per_cell": 100000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD14+ Monocytes"
+    },
+    "cd34": {
+      "cells_approx": true,
+      "cells_on_page": 9000,
+      "lineage": "CD34+ progenitors",
+      "purity_approx": false,
+      "purity_percent": 45,
+      "reads_per_cell": 24700,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD34+ Cells"
+    },
+    "cd4_t_helper": {
+      "cells_approx": true,
+      "cells_on_page": 11000,
+      "lineage": "CD4 T cells",
+      "purity_approx": false,
+      "purity_percent": 99,
+      "reads_per_cell": 21000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD4+ Helper T Cells"
+    },
+    "cd56_nk": {
+      "cells_approx": true,
+      "cells_on_page": 8000,
+      "lineage": "NK cells",
+      "purity_approx": false,
+      "purity_percent": 92,
+      "reads_per_cell": 29000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD56+ Natural Killer Cells"
+    },
+    "cytotoxic_t": {
+      "cells_approx": true,
+      "cells_on_page": 10000,
+      "lineage": "CD8 T cells",
+      "purity_approx": false,
+      "purity_percent": 98,
+      "reads_per_cell": 28600,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD8+ Cytotoxic T cells"
+    },
+    "memory_t": {
+      "cells_approx": false,
+      "cells_on_page": 10224,
+      "lineage": "CD4 T cells",
+      "purity_approx": false,
+      "purity_percent": 98,
+      "reads_per_cell": 24000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD4+/CD45RO+ Memory T Cells"
+    },
+    "naive_cytotoxic": {
+      "cells_approx": false,
+      "cells_on_page": 11953,
+      "lineage": "CD8 T cells",
+      "purity_approx": false,
+      "purity_percent": 99,
+      "reads_per_cell": 20000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD8+/CD45RA+ Naive Cytotoxic T Cells"
+    },
+    "naive_t": {
+      "cells_approx": false,
+      "cells_on_page": 10479,
+      "lineage": "CD4 T cells",
+      "purity_approx": false,
+      "purity_percent": 98,
+      "reads_per_cell": 19000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD4+/CD45RA+/CD25- Naive T cells"
+    },
+    "regulatory_t": {
+      "cells_approx": true,
+      "cells_on_page": 10000,
+      "lineage": "CD4 T cells",
+      "purity_approx": false,
+      "purity_percent": 95,
+      "reads_per_cell": 27000,
+      "reads_per_cell_approx": true,
+      "tenx_name": "CD4+/CD25+ Regulatory T Cells"
+    }
+  },
+  "days_referenced": [
+    2,
+    48,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+  ],
+  "paper_pbmc_sample": {
+    "k_used": 10,
+    "n_cells": 68000
+  }
+}

@@ -1,0 +1,102 @@
+project:
+  repo: immune_cell_subtype_discovery
+  chapter: 7
+  title: "Immune cell subtype discovery from single-cell RNA-seq"
+  preregistration_days: [62, 63, 64, 65, 66]
+  master_seed: 7
+data:
+  citation: "Zheng GXY et al. 2017, Nature Communications 8:14049"
+  doi: "10.1038/ncomms14049"
+  cell_ranger_version: "1.1.0"
+  reference: hg19
+  url_pattern: "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/{key}/{key}_filtered_gene_bc_matrices.tar.gz"
+  populations:
+    b_cells: "B cells"
+    cd14_monocytes: "Monocytes"
+    cd34: "CD34+ progenitors"
+    cd4_t_helper: "CD4 T cells"
+    regulatory_t: "CD4 T cells"
+    naive_t: "CD4 T cells"
+    memory_t: "CD4 T cells"
+    cd56_nk: "NK cells"
+    cytotoxic_t: "CD8 T cells"
+    naive_cytotoxic: "CD8 T cells"
+  cell_filtering: none
+  doublet_removal: none
+  batch_correction: none
+  downsampling: none
+quarantine:
+  pooled_file: data/interim/pooled_anonymised.h5ad
+  labels_file: data/interim/labels_quarantine.csv
+  first_script_allowed: 7
+  max_adjacent_same_label: 0.2
+rng_streams: {shuffle: 1, silhouette_subsample: 2, bootstrap: 3, permutation: 4}
+preprocess:
+  recipe: "scanpy.pp.recipe_zheng17"
+  n_top_genes: 1000
+  log: true
+  n_pcs: 50
+  pca_svd_solver: arpack
+  marker_target_sum: 10000
+  mito_prefix: "MT-"
+k_selection:
+  k_values: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  criterion: mean_silhouette
+  metric: euclidean
+  space: pca_50
+  subsample_size: 10000
+  tie_rule: "round to 4 decimal places; smallest k wins"
+kmeans:
+  init: "k-means++"
+  n_init: 50
+  max_iter: 300
+  tol: 0.0001
+  algorithm: lloyd
+  random_state: 7
+  oracle_k: 10
+  stability_seeds: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]
+leiden:
+  n_neighbors: 15
+  n_pcs: 50
+  flavor: igraph
+  n_iterations: 2
+  directed: false
+  resolutions: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
+  tie_rule: "round to 4 decimal places; lowest resolution wins"
+  random_state: 7
+  stability_seeds: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]
+technical_baseline:
+  features: [log10_total_counts, log10_n_genes, pct_mito]
+  scaling: zscore
+  k: [chosen, 10]
+evaluation:
+  metric: adjusted_rand_index
+  keys: [ten_labels, six_lineages]
+  n_bootstrap: 1000
+  n_permutations: 1000
+  ci_level: 0.95
+  beats_rule: "lower bound of paired bootstrap 95% CI of the ARI difference > 0"
+  unresolved_share: 0.5
+naming:
+  t_markers: [CD3D, CD3E, CD3G]
+  lineage_markers:
+    "B cells": [CD79A, CD79B, MS4A1, CD19]
+    "Monocytes": [CD14, LYZ, S100A8, S100A9, FCN1]
+    "NK cells": [GNLY, NKG7, KLRF1, NCAM1]
+    "CD34+ progenitors": [CD34]
+  cd8_markers: [CD8A, CD8B]
+  cd4_marker: CD4
+  wilcoxon_top_n: 20
+  human_vocabulary: ["B cells", "Monocytes", "NK cells", "CD34+ progenitors", "CD4 T cells", "CD8 T cells", "unresolved"]
+diagnostics:
+  label_genes: [CD4, CD8A, CD8B, CD14, CD19, IL2RA, CD34, PTPRC, NCAM1]
+  nested_pair: [cd4_t_helper, naive_t]
+  distinct_pair: [naive_t, memory_t]
+predictions:
+  scored_on: kmeans_oracle_k10
+  P1: {label: b_cells, stat: recovery, rule: ">= 0.80"}
+  P2: {label: cd14_monocytes, stat: recovery, rule: ">= 0.80"}
+  P3: {labels: [cd56_nk, cytotoxic_t], stat: overlap, rule: ">= 0.10"}
+  P4: {label: cd34, stat: recovery, rule: ">= 0.80"}
+  P5: {labels: [cd4_t_helper, regulatory_t, naive_t, memory_t, cytotoxic_t, naive_cytotoxic], rule: "no label has a best cluster with recovery >= 0.80 and purity >= 0.80"}
+  P6: {stat: sub_ari, rule: "sub_ari(cd4_t_helper, naive_t) <= sub_ari(naive_t, memory_t)"}
