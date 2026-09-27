@@ -1,0 +1,343 @@
+{
+  "descriptive": {
+    "kmeans_primary": {
+      "P1": {
+        "best_cluster": 0,
+        "label": "b_cells",
+        "operator": ">=",
+        "passed": true,
+        "stat": "recovery",
+        "threshold": 0.8,
+        "value": 0.9999008428358949
+      },
+      "P2": {
+        "best_cluster": 1,
+        "label": "cd14_monocytes",
+        "operator": ">=",
+        "passed": true,
+        "stat": "recovery",
+        "threshold": 0.8,
+        "value": 0.9774119448698315
+      },
+      "P3": {
+        "labels": [
+          "cd56_nk",
+          "cytotoxic_t"
+        ],
+        "operator": ">=",
+        "passed": true,
+        "stat": "overlap",
+        "threshold": 0.1,
+        "value": 0.9996422182468694
+      },
+      "P4": {
+        "best_cluster": 0,
+        "label": "cd34",
+        "operator": ">=",
+        "passed": true,
+        "stat": "recovery",
+        "threshold": 0.8,
+        "value": 0.8970970537261699
+      },
+      "P5": {
+        "labels": [
+          "cd4_t_helper",
+          "regulatory_t",
+          "naive_t",
+          "memory_t",
+          "cytotoxic_t",
+          "naive_cytotoxic"
+        ],
+        "n_clean": 0,
+        "passed": true,
+        "per_label": [
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "cd4_t_helper",
+            "purity": 0.12295081967213115,
+            "recovery": 0.9992865424061357
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "regulatory_t",
+            "purity": 0.1125814734347225,
+            "recovery": 0.9997076878105817
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "naive_t",
+            "purity": 0.11496258257072003,
+            "recovery": 0.9998091420937112
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "memory_t",
+            "purity": 0.11217547786775517,
+            "recovery": 0.9999021909233177
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "cytotoxic_t",
+            "purity": 0.11202185792349727,
+            "recovery": 1.0
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "naive_cytotoxic",
+            "purity": 0.13115851383676783,
+            "recovery": 1.0
+          }
+        ],
+        "purity_threshold": 0.8,
+        "recovery_threshold": 0.8
+      },
+      "P6": {
+        "distinct_pair": [
+          "naive_t",
+          "memory_t"
+        ],
+        "nested_pair": [
+          "cd4_t_helper",
+          "naive_t"
+        ],
+        "operator": "<=",
+        "passed": true,
+        "sub_ari_distinct": -2.3108484852842117e-06,
+        "sub_ari_nested": -3.514628268239391e-05
+      }
+    },
+    "leiden_primary": {
+      "P1": {
+        "best_cluster": 3,
+        "label": "b_cells",
+        "operator": ">=",
+        "passed": true,
+        "stat": "recovery",
+        "threshold": 0.8,
+        "value": 0.9968269707486366
+      },
+      "P2": {
+        "best_cluster": 10,
+        "label": "cd14_monocytes",
+        "operator": ">=",
+        "passed": true,
+        "stat": "recovery",
+        "threshold": 0.8,
+        "value": 0.9464012251148545
+      },
+      "P3": {
+        "labels": [
+          "cd56_nk",
+          "cytotoxic_t"
+        ],
+        "operator": ">=",
+        "passed": false,
+        "stat": "overlap",
+        "threshold": 0.1,
+        "value": 0.009127412394023935
+      },
+      "P4": {
+        "best_cluster": 8,
+        "label": "cd34",
+        "operator": ">=",
+        "passed": false,
+        "stat": "recovery",
+        "threshold": 0.8,
+        "value": 0.5017331022530329
+      },
+      "P5": {
+        "labels": [
+          "cd4_t_helper",
+          "regulatory_t",
+          "naive_t",
+          "memory_t",
+          "cytotoxic_t",
+          "naive_cytotoxic"
+        ],
+        "n_clean": 1,
+        "passed": false,
+        "per_label": [
+          {
+            "best_cluster": 1,
+            "clean": false,
+            "label": "cd4_t_helper",
+            "purity": 0.42468062455642297,
+            "recovery": 0.4269151877285294
+          },
+          {
+            "best_cluster": 1,
+            "clean": false,
+            "label": "regulatory_t",
+            "purity": 0.498846699787083,
+            "recovery": 0.5478904803663646
+          },
+          {
+            "best_cluster": 2,
+            "clean": false,
+            "label": "naive_t",
+            "purity": 0.4845379688929552,
+            "recovery": 0.5053917358526577
+          },
+          {
+            "best_cluster": 4,
+            "clean": true,
+            "label": "memory_t",
+            "purity": 0.9121228163049232,
+            "recovery": 0.8426251956181534
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "cytotoxic_t",
+            "purity": 0.3159870929891464,
+            "recovery": 0.5275737094720345
+          },
+          {
+            "best_cluster": 0,
+            "clean": false,
+            "label": "naive_cytotoxic",
+            "purity": 0.6678791434438252,
+            "recovery": 0.9523968878105915
+          }
+        ],
+        "purity_threshold": 0.8,
+        "recovery_threshold": 0.8
+      },
+      "P6": {
+        "distinct_pair": [
+          "naive_t",
+          "memory_t"
+        ],
+        "nested_pair": [
+          "cd4_t_helper",
+          "naive_t"
+        ],
+        "operator": "<=",
+        "passed": true,
+        "sub_ari_distinct": 0.5550657474183173,
+        "sub_ari_nested": 0.12402701792634009
+      }
+    }
+  },
+  "n_passed": 4,
+  "n_predictions": 6,
+  "predictions": {
+    "P1": {
+      "best_cluster": 3,
+      "label": "b_cells",
+      "operator": ">=",
+      "passed": true,
+      "stat": "recovery",
+      "threshold": 0.8,
+      "value": 0.9988101140307387
+    },
+    "P2": {
+      "best_cluster": 5,
+      "label": "cd14_monocytes",
+      "operator": ">=",
+      "passed": true,
+      "stat": "recovery",
+      "threshold": 0.8,
+      "value": 0.9276416539050536
+    },
+    "P3": {
+      "labels": [
+        "cd56_nk",
+        "cytotoxic_t"
+      ],
+      "operator": ">=",
+      "passed": false,
+      "stat": "overlap",
+      "threshold": 0.1,
+      "value": 0.046904104922679504
+    },
+    "P4": {
+      "best_cluster": 6,
+      "label": "cd34",
+      "operator": ">=",
+      "passed": false,
+      "stat": "recovery",
+      "threshold": 0.8,
+      "value": 0.2962521663778163
+    },
+    "P5": {
+      "labels": [
+        "cd4_t_helper",
+        "regulatory_t",
+        "naive_t",
+        "memory_t",
+        "cytotoxic_t",
+        "naive_cytotoxic"
+      ],
+      "n_clean": 0,
+      "passed": true,
+      "per_label": [
+        {
+          "best_cluster": 0,
+          "clean": false,
+          "label": "cd4_t_helper",
+          "purity": 0.3361251838535708,
+          "recovery": 0.7337019530901632
+        },
+        {
+          "best_cluster": 2,
+          "clean": false,
+          "label": "regulatory_t",
+          "purity": 0.3570266851394494,
+          "recovery": 0.5775114488940856
+        },
+        {
+          "best_cluster": 0,
+          "clean": false,
+          "label": "naive_t",
+          "purity": 0.4126899820232064,
+          "recovery": 0.9639278557114228
+        },
+        {
+          "best_cluster": 2,
+          "clean": false,
+          "label": "memory_t",
+          "purity": 0.28612734172640203,
+          "recovery": 0.4645931142410016
+        },
+        {
+          "best_cluster": 1,
+          "clean": false,
+          "label": "cytotoxic_t",
+          "purity": 0.3063971606648199,
+          "recovery": 0.6934077774512685
+        },
+        {
+          "best_cluster": 1,
+          "clean": false,
+          "label": "naive_cytotoxic",
+          "purity": 0.5096520083102493,
+          "recovery": 0.9851083410022589
+        }
+      ],
+      "purity_threshold": 0.8,
+      "recovery_threshold": 0.8
+    },
+    "P6": {
+      "distinct_pair": [
+        "naive_t",
+        "memory_t"
+      ],
+      "nested_pair": [
+        "cd4_t_helper",
+        "naive_t"
+      ],
+      "operator": "<=",
+      "passed": true,
+      "sub_ari_distinct": 0.4916788404282097,
+      "sub_ari_nested": 0.047284417053901504
+    }
+  },
+  "scored_on": "kmeans_oracle_k10"
+}

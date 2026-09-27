@@ -1,0 +1,10 @@
+cluster,n_cells,plurality_lineage,plurality_population,plurality_population_share,plurality_share,plurality_tie,truth,arm,top10_markers
+0,91134,CD4 T cells,naive_cytotoxic,0.13115851383676783,0.46267035354532887,False,unresolved,kmeans_primary,"['RPL3', 'RPS27', 'RPL5', 'RPS3', 'RPL15', 'RPS6', 'LTB', 'RPSA', 'MALAT1', 'RPL10']"
+1,18067,CD34+ progenitors,cd34,0.4549731554768362,0.4549731554768362,False,unresolved,technical_k_chosen,"['RPS24', 'ZFAS1', 'GSTP1', 'UQCRB', 'RPL37', 'GPX1', 'RPL37A', 'TXN', 'AIF1', 'MT-ND3']"
+0,19145,CD4 T cells,naive_cytotoxic,0.22757900235048314,0.46576129537738314,False,unresolved,technical_k10,"['RPL13', 'RPL10', 'RPL21', 'RPL13A', 'RPS6', 'RPS2', 'RPL18A', 'RPL3', 'RPL32', 'RPS3']"
+1,17801,CD4 T cells,cytotoxic_t,0.2184708724228976,0.4952530756699062,False,unresolved,technical_k10,"['IL32', 'B2M', 'PFN1', 'ACTB', 'MYL12A', 'CALM1', 'S100A4', 'CD3D', 'IFITM2', 'HLA-A']"
+3,10569,CD8 T cells,cd56_nk,0.2754281388967736,0.30826000567697986,False,unresolved,technical_k10,"['MT-CO2', 'MT-CO1', 'MT-CYB', 'MT-CO3', 'MT-ND2', 'MT-ATP6', 'MT-ND4', 'MT-ND5', 'MT-ND1', 'NKG7']"
+5,8616,CD34+ progenitors,cd34,0.3050139275766017,0.3050139275766017,False,unresolved,technical_k10,"['GSTP1', 'ATP5E', 'CLIC1', 'ZFAS1', 'GPX1', 'RPS24', 'ACTG1', 'CD74', 'ATP5L', 'CALM2']"
+6,7537,CD4 T cells,b_cells,0.27093007828048293,0.3396576887355712,False,unresolved,technical_k10,"['MT-CO1', 'MT-CO2', 'MT-CO3', 'MT-CYB', 'MT-ND1', 'MT-ND4', 'MT-ND2', 'MT-ATP6', 'HLA-DRB1', 'RPL13']"
+8,884,B cells,b_cells,0.3042986425339366,0.3042986425339366,False,unresolved,technical_k10,"['MT-CO1', 'MT-CO2', 'MT-CO3', 'MT-CYB', 'MT-ND4', 'MT-ND2', 'MT-ATP6', 'MT-ND1', 'MALAT1', 'MT-ND5']"
+9,88,NK cells,cd56_nk,0.38636363636363635,0.38636363636363635,False,unresolved,technical_k10,"['MT-CO1', 'MT-ND4', 'MT-CO3', 'MT-CO2', 'MT-CYB', 'MT-ND2', 'MT-ND1', 'MT-ATP6', 'MALAT1', 'MT-ND5']"
