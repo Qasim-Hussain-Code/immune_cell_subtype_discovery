@@ -1,0 +1,268 @@
+{
+  "chosen_k": 2,
+  "chosen_k_silhouette": 0.6335609555244446,
+  "chosen_resolution": 0.8,
+  "chosen_resolution_n_clusters": 23,
+  "chosen_resolution_silhouette": 0.19697114825248718,
+  "kmeans_curve": [
+    {
+      "inertia": 15850200.0,
+      "k": 2,
+      "n_iter": 3,
+      "seconds": 19.635451078414917,
+      "silhouette": 0.6335609555244446
+    },
+    {
+      "inertia": 13480990.0,
+      "k": 3,
+      "n_iter": 6,
+      "seconds": 21.355759859085083,
+      "silhouette": 0.5116097331047058
+    },
+    {
+      "inertia": 11480187.0,
+      "k": 4,
+      "n_iter": 12,
+      "seconds": 23.5440936088562,
+      "silhouette": 0.4284016191959381
+    },
+    {
+      "inertia": 9847018.0,
+      "k": 5,
+      "n_iter": 10,
+      "seconds": 28.743897676467896,
+      "silhouette": 0.44997626543045044
+    },
+    {
+      "inertia": 9324436.0,
+      "k": 6,
+      "n_iter": 11,
+      "seconds": 14.863605976104736,
+      "silhouette": 0.45831406116485596
+    },
+    {
+      "inertia": 8881436.0,
+      "k": 7,
+      "n_iter": 16,
+      "seconds": 37.57446885108948,
+      "silhouette": 0.2647157609462738
+    },
+    {
+      "inertia": 8638304.0,
+      "k": 8,
+      "n_iter": 14,
+      "seconds": 42.41293716430664,
+      "silhouette": 0.2642853558063507
+    },
+    {
+      "inertia": 8415227.0,
+      "k": 9,
+      "n_iter": 13,
+      "seconds": 45.84168457984924,
+      "silhouette": 0.2094992697238922
+    },
+    {
+      "inertia": 8204635.0,
+      "k": 10,
+      "n_iter": 14,
+      "seconds": 47.026872396469116,
+      "silhouette": 0.21287617087364197
+    },
+    {
+      "inertia": 8017030.0,
+      "k": 11,
+      "n_iter": 53,
+      "seconds": 57.97567367553711,
+      "silhouette": 0.27143120765686035
+    },
+    {
+      "inertia": 7793884.5,
+      "k": 12,
+      "n_iter": 20,
+      "seconds": 78.85423922538757,
+      "silhouette": 0.21719792485237122
+    },
+    {
+      "inertia": 7638136.5,
+      "k": 13,
+      "n_iter": 35,
+      "seconds": 65.15819811820984,
+      "silhouette": 0.22861191630363464
+    },
+    {
+      "inertia": 7488932.5,
+      "k": 14,
+      "n_iter": 33,
+      "seconds": 71.13662934303284,
+      "silhouette": 0.23025983572006226
+    },
+    {
+      "inertia": 7370553.0,
+      "k": 15,
+      "n_iter": 46,
+      "seconds": 76.50693917274475,
+      "silhouette": 0.219465434551239
+    },
+    {
+      "inertia": 7217894.0,
+      "k": 16,
+      "n_iter": 60,
+      "seconds": 76.18890500068665,
+      "silhouette": 0.2318560779094696
+    },
+    {
+      "inertia": 7068544.5,
+      "k": 17,
+      "n_iter": 41,
+      "seconds": 87.9363694190979,
+      "silhouette": 0.23247043788433075
+    },
+    {
+      "inertia": 6982489.5,
+      "k": 18,
+      "n_iter": 40,
+      "seconds": 92.70696020126343,
+      "silhouette": 0.21538236737251282
+    },
+    {
+      "inertia": 6862709.0,
+      "k": 19,
+      "n_iter": 21,
+      "seconds": 30.934029579162598,
+      "silhouette": 0.21648842096328735
+    },
+    {
+      "inertia": 6805211.0,
+      "k": 20,
+      "n_iter": 52,
+      "seconds": 27.740052938461304,
+      "silhouette": 0.21706460416316986
+    }
+  ],
+  "leiden_curve": [
+    {
+      "n_clusters": 10,
+      "resolution": 0.1,
+      "seconds": 6.463971853256226,
+      "silhouette": 0.18895083665847778
+    },
+    {
+      "n_clusters": 12,
+      "resolution": 0.2,
+      "seconds": 6.120019435882568,
+      "silhouette": 0.1876993179321289
+    },
+    {
+      "n_clusters": 16,
+      "resolution": 0.3,
+      "seconds": 6.660191774368286,
+      "silhouette": 0.18606840074062347
+    },
+    {
+      "n_clusters": 18,
+      "resolution": 0.4,
+      "seconds": 6.184553861618042,
+      "silhouette": 0.1894390732049942
+    },
+    {
+      "n_clusters": 19,
+      "resolution": 0.5,
+      "seconds": 6.218158483505249,
+      "silhouette": 0.18468141555786133
+    },
+    {
+      "n_clusters": 21,
+      "resolution": 0.6,
+      "seconds": 6.2581236362457275,
+      "silhouette": 0.19203920662403107
+    },
+    {
+      "n_clusters": 21,
+      "resolution": 0.7,
+      "seconds": 6.2749340534210205,
+      "silhouette": 0.1872793585062027
+    },
+    {
+      "n_clusters": 23,
+      "resolution": 0.8,
+      "seconds": 6.179114818572998,
+      "silhouette": 0.19697114825248718
+    },
+    {
+      "n_clusters": 26,
+      "resolution": 0.9,
+      "seconds": 6.252942085266113,
+      "silhouette": 0.19096140563488007
+    },
+    {
+      "n_clusters": 27,
+      "resolution": 1.0,
+      "seconds": 6.1984734535217285,
+      "silhouette": 0.18950822949409485
+    },
+    {
+      "n_clusters": 28,
+      "resolution": 1.1,
+      "seconds": 6.241712808609009,
+      "silhouette": 0.18485063314437866
+    },
+    {
+      "n_clusters": 34,
+      "resolution": 1.2,
+      "seconds": 7.1586785316467285,
+      "silhouette": 0.13170166313648224
+    },
+    {
+      "n_clusters": 32,
+      "resolution": 1.3,
+      "seconds": 7.037370443344116,
+      "silhouette": 0.13433738052845
+    },
+    {
+      "n_clusters": 37,
+      "resolution": 1.4,
+      "seconds": 6.294442892074585,
+      "silhouette": 0.12998010218143463
+    },
+    {
+      "n_clusters": 37,
+      "resolution": 1.5,
+      "seconds": 6.261138677597046,
+      "silhouette": 0.11855698376893997
+    },
+    {
+      "n_clusters": 43,
+      "resolution": 1.6,
+      "seconds": 6.198116064071655,
+      "silhouette": 0.09402071684598923
+    },
+    {
+      "n_clusters": 43,
+      "resolution": 1.7,
+      "seconds": 6.41150164604187,
+      "silhouette": 0.10457203537225723
+    },
+    {
+      "n_clusters": 47,
+      "resolution": 1.8,
+      "seconds": 6.253945350646973,
+      "silhouette": 0.10855840891599655
+    },
+    {
+      "n_clusters": 44,
+      "resolution": 1.9,
+      "seconds": 6.223632097244263,
+      "silhouette": 0.09396279603242874
+    },
+    {
+      "n_clusters": 50,
+      "resolution": 2.0,
+      "seconds": 6.404892444610596,
+      "silhouette": 0.09530249983072281
+    }
+  ],
+  "n_cells": 94655,
+  "neighbours_seconds": 61.28395962715149,
+  "runtime_seconds": 1139.1916615962982,
+  "subsample_size": 10000
+}
