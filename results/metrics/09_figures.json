@@ -50,7 +50,7 @@
     },
     {
       "path": "figures/09_recovery_purity.png",
-      "sha256": "43f4f592af02a46ae50e8ad702a55995977db784e60b497d1b9517b18394b87f"
+      "sha256": "aa4aa6091948ae9bf70846a9b6f7a315ce4f0ea448640aa52b424ac07051e96e"
     },
     {
       "path": "figures/09_technical_by_population.png",
@@ -58,7 +58,7 @@
     },
     {
       "path": "figures/09_nested_label_test.png",
-      "sha256": "92368c29b5742c6970a93e5897afe4b8a9b200eeeb2bb6219df197310e744b91"
+      "sha256": "7634996d9c2a4b878b0823aaea673709f8e34300aa56a39581d2500f9f234342"
     },
     {
       "path": "figures/09_label_gene_detection.png",

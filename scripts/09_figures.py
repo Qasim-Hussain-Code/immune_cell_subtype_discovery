@@ -118,7 +118,8 @@ def main():
         ax.set_xticklabels(populations, rotation=60, ha="right")
         ax.set_title(f"{stat.capitalize()} of each label in its best cluster")
     axes[0].axhline(0.8, color=NULL_COLOUR, linestyle="--", linewidth=0.8)
-    axes[0].legend(frameon=False, fontsize=7)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, frameon=False, fontsize=8, loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.2))
     save(fig, "09_recovery_purity.png")
 
     # Technical metrics by population.
@@ -140,8 +141,10 @@ def main():
     fig, ax = plt.subplots(figsize=(6.5, 3.6))
     x = np.arange(len(arms))
     nested, distinct = cfg["diagnostics"]["nested_pair"], cfg["diagnostics"]["distinct_pair"]
-    ax.bar(x - 0.18, [sub[a]["nested"] for a in arms], width=0.36, color=PALETTE[5], label=f"nested: {nested[0]} vs {nested[1]}")
-    ax.bar(x + 0.18, [sub[a]["distinct"] for a in arms], width=0.36, color=PALETTE[0], label=f"distinct: {distinct[0]} vs {distinct[1]}")
+    bars_nested = ax.bar(x - 0.18, [sub[a]["nested"] for a in arms], width=0.36, color=PALETTE[5], label=f"nested: {nested[0]} vs {nested[1]}")
+    bars_distinct = ax.bar(x + 0.18, [sub[a]["distinct"] for a in arms], width=0.36, color=PALETTE[0], label=f"distinct: {distinct[0]} vs {distinct[1]}")
+    for bars in (bars_nested, bars_distinct):
+        ax.bar_label(bars, labels=[f"{b.get_height():.2f}".replace("-0.00", "0.00") for b in bars], fontsize=7, padding=2)
     ax.set_xticks(x)
     ax.set_xticklabels([SHORT[a] for a in arms], fontsize=7)
     ax.set_ylabel("ARI within the pair")
