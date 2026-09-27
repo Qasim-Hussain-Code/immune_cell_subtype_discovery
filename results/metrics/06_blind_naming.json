@@ -1,0 +1,757 @@
+{
+  "kmeans_rerun_solutions": [
+    {
+      "includes_primary": false,
+      "inertia": 15693770.758025091,
+      "n_reruns": 12,
+      "seeds": [
+        101,
+        104,
+        107,
+        108,
+        110,
+        111,
+        114,
+        115,
+        116,
+        117,
+        119,
+        120
+      ],
+      "silhouette_subsample": 0.5365979049629621,
+      "sizes": [
+        83404,
+        11251
+      ]
+    },
+    {
+      "includes_primary": true,
+      "inertia": 15850196.053598313,
+      "n_reruns": 8,
+      "seeds": [
+        7,
+        102,
+        103,
+        105,
+        106,
+        109,
+        112,
+        113,
+        118
+      ],
+      "silhouette_subsample": 0.6335609586526001,
+      "sizes": [
+        91134,
+        3521
+      ]
+    }
+  ],
+  "marker_seconds": {
+    "kmeans_oracle_k10": 147.421000957489,
+    "kmeans_primary": 142.07474875450134,
+    "leiden_primary": 157.68410968780518
+  },
+  "n_kmeans_rerun_solutions": 2,
+  "n_lineage_ties": {
+    "kmeans_oracle_k10": 0,
+    "kmeans_primary": 0,
+    "leiden_primary": 0
+  },
+  "n_rule_unresolved": {
+    "kmeans_oracle_k10": 0,
+    "kmeans_primary": 0,
+    "leiden_primary": 1
+  },
+  "naming_genes": [
+    "CD3D",
+    "CD3E",
+    "CD3G",
+    "CD79A",
+    "CD79B",
+    "MS4A1",
+    "CD19",
+    "CD14",
+    "LYZ",
+    "S100A8",
+    "S100A9",
+    "FCN1",
+    "GNLY",
+    "NKG7",
+    "KLRF1",
+    "NCAM1",
+    "CD34",
+    "CD8A",
+    "CD8B",
+    "CD4"
+  ],
+  "rule_name_counts": {
+    "kmeans_oracle_k10": {
+      "B cells": 1,
+      "CD34+ progenitors": 3,
+      "CD4 T cells": 2,
+      "CD8 T cells": 1,
+      "Monocytes": 2,
+      "NK cells": 1
+    },
+    "kmeans_primary": {
+      "CD8 T cells": 1,
+      "Monocytes": 1
+    },
+    "leiden_primary": {
+      "B cells": 1,
+      "CD34+ progenitors": 3,
+      "CD4 T cells": 8,
+      "CD8 T cells": 7,
+      "Monocytes": 2,
+      "NK cells": 1,
+      "unresolved": 1
+    }
+  },
+  "rule_names": {
+    "kmeans_oracle_k10": [
+      {
+        "branch": "T",
+        "cluster": 0,
+        "n_cells": 24476,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 1,
+        "n_cells": 23104,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 2,
+        "n_cells": 16601,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 3,
+        "n_cells": 10472,
+        "name": "B cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 4,
+        "n_cells": 8579,
+        "name": "NK cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 5,
+        "n_cells": 3140,
+        "name": "Monocytes"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 6,
+        "n_cells": 2771,
+        "name": "CD34+ progenitors"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 7,
+        "n_cells": 2731,
+        "name": "CD34+ progenitors"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 8,
+        "n_cells": 2337,
+        "name": "CD34+ progenitors"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 9,
+        "n_cells": 444,
+        "name": "Monocytes"
+      }
+    ],
+    "kmeans_primary": [
+      {
+        "branch": "T",
+        "cluster": 0,
+        "n_cells": 91134,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 1,
+        "n_cells": 3521,
+        "name": "Monocytes"
+      }
+    ],
+    "leiden_primary": [
+      {
+        "branch": "T",
+        "cluster": 0,
+        "n_cells": 17045,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 1,
+        "n_cells": 11272,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 2,
+        "n_cells": 10930,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 3,
+        "n_cells": 10431,
+        "name": "B cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 4,
+        "n_cells": 9445,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 5,
+        "n_cells": 8361,
+        "name": "NK cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 6,
+        "n_cells": 5754,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 7,
+        "n_cells": 5435,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 8,
+        "n_cells": 4677,
+        "name": "CD34+ progenitors"
+      },
+      {
+        "branch": "T",
+        "cluster": 9,
+        "n_cells": 3772,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 10,
+        "n_cells": 3425,
+        "name": "Monocytes"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 11,
+        "n_cells": 2781,
+        "name": "CD34+ progenitors"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 12,
+        "n_cells": 364,
+        "name": "Monocytes"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 13,
+        "n_cells": 330,
+        "name": "CD34+ progenitors"
+      },
+      {
+        "branch": "T",
+        "cluster": 14,
+        "n_cells": 129,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 15,
+        "n_cells": 115,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 16,
+        "n_cells": 107,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 17,
+        "n_cells": 77,
+        "name": "CD8 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 18,
+        "n_cells": 75,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 19,
+        "n_cells": 39,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "T",
+        "cluster": 20,
+        "n_cells": 38,
+        "name": "CD4 T cells"
+      },
+      {
+        "branch": "lineage",
+        "cluster": 21,
+        "n_cells": 34,
+        "name": "unresolved"
+      },
+      {
+        "branch": "T",
+        "cluster": 22,
+        "n_cells": 19,
+        "name": "CD8 T cells"
+      }
+    ]
+  },
+  "runtime_seconds": 459.756707906723,
+  "top10_markers": {
+    "kmeans_oracle_k10": {
+      "0": [
+        "RPL3",
+        "EEF1A1",
+        "RPL10",
+        "RPS6",
+        "RPS2",
+        "RPL4",
+        "RPL13",
+        "RPS4X",
+        "RPS3",
+        "LDHB"
+      ],
+      "1": [
+        "RPL32",
+        "RPS12",
+        "RPS14",
+        "RPL31",
+        "RPLP2",
+        "RPS27",
+        "CD8B",
+        "RPL21",
+        "RPS25",
+        "RPS18"
+      ],
+      "2": [
+        "IL32",
+        "S100A4",
+        "B2M",
+        "SH3BGRL3",
+        "HLA-A",
+        "HLA-B",
+        "PFN1",
+        "S100A10",
+        "HLA-C",
+        "TMSB4X"
+      ],
+      "3": [
+        "CD74",
+        "HLA-DRA",
+        "CD79A",
+        "HLA-DRB1",
+        "HLA-DPB1",
+        "HLA-DPA1",
+        "CD79B",
+        "CD37",
+        "HLA-DRB5",
+        "HLA-DQA1"
+      ],
+      "4": [
+        "GNLY",
+        "NKG7",
+        "GZMA",
+        "CST7",
+        "GZMB",
+        "TYROBP",
+        "FCER1G",
+        "MALAT1",
+        "CTSW",
+        "CLIC3"
+      ],
+      "5": [
+        "FTL",
+        "S100A9",
+        "S100A8",
+        "TYROBP",
+        "CST3",
+        "FTH1",
+        "S100A4",
+        "LYZ",
+        "S100A6",
+        "AIF1"
+      ],
+      "6": [
+        "SPINK2",
+        "ZFAS1",
+        "AIF1",
+        "LST1",
+        "RPS24",
+        "KIAA0125",
+        "GSTP1",
+        "SOX4",
+        "GPX1",
+        "CD74"
+      ],
+      "7": [
+        "RPS24",
+        "ZFAS1",
+        "PRSS57",
+        "SPINK2",
+        "RP11-620J15.3",
+        "HINT1",
+        "SERPINB1",
+        "AIF1",
+        "RPS23",
+        "RPL37A"
+      ],
+      "8": [
+        "RP11-620J15.3",
+        "PRSS57",
+        "RPS24",
+        "RPL37A",
+        "ZFAS1",
+        "SERPINB1",
+        "CYTL1",
+        "SOX4",
+        "FCER1A",
+        "HSP90AB1"
+      ],
+      "9": [
+        "CST3",
+        "HLA-DPB1",
+        "HLA-DRA",
+        "HLA-DPA1",
+        "LYZ",
+        "HLA-DRB1",
+        "GPX1",
+        "HLA-DQA1",
+        "HLA-DMA",
+        "CD74"
+      ]
+    },
+    "kmeans_primary": {
+      "0": [
+        "RPL3",
+        "RPS27",
+        "RPL5",
+        "RPS3",
+        "RPL15",
+        "RPS6",
+        "LTB",
+        "RPSA",
+        "MALAT1",
+        "RPL10"
+      ],
+      "1": [
+        "CST3",
+        "S100A9",
+        "S100A8",
+        "TYROBP",
+        "FTH1",
+        "FTL",
+        "LYZ",
+        "S100A4",
+        "S100A6",
+        "AIF1"
+      ]
+    },
+    "leiden_primary": {
+      "0": [
+        "CD8B",
+        "RPL32",
+        "RPS14",
+        "RPS12",
+        "RPL31",
+        "RPL21",
+        "RPLP2",
+        "RPS25",
+        "RPS27",
+        "RPS19"
+      ],
+      "1": [
+        "EEF1A1",
+        "B2M",
+        "IL32",
+        "JUNB",
+        "RPL3",
+        "RPL10",
+        "LTB",
+        "RPS2",
+        "ACTB",
+        "VIM"
+      ],
+      "10": [
+        "S100A9",
+        "FTL",
+        "S100A8",
+        "CST3",
+        "TYROBP",
+        "FTH1",
+        "S100A4",
+        "LYZ",
+        "S100A6",
+        "AIF1"
+      ],
+      "11": [
+        "SPINK2",
+        "ZFAS1",
+        "AIF1",
+        "LST1",
+        "RPS24",
+        "GSTP1",
+        "KIAA0125",
+        "SOX4",
+        "GPX1",
+        "CD74"
+      ],
+      "12": [
+        "CST3",
+        "GPX1",
+        "HLA-DPA1",
+        "HLA-DRA",
+        "HLA-DPB1",
+        "HLA-DRB1",
+        "CD74",
+        "HLA-DQA1",
+        "VIM",
+        "LYZ"
+      ],
+      "13": [
+        "LMO4",
+        "RPL37A",
+        "PRSS57",
+        "RP11-620J15.3",
+        "TPSAB1",
+        "RPS24",
+        "S100A6",
+        "RPS20",
+        "CD63",
+        "RPLP1"
+      ],
+      "14": [
+        "SIRPB1",
+        "RPS3",
+        "NLRP3",
+        "JUNB",
+        "RPSA",
+        "LDHB",
+        "CD3E",
+        "RPL3",
+        "CD3D",
+        "RPL13"
+      ],
+      "15": [
+        "CD101",
+        "RPS6",
+        "RPL3",
+        "RPL13",
+        "RPS5",
+        "RPS2",
+        "RPL32",
+        "RPS3",
+        "RPL21",
+        "EEF1A1"
+      ],
+      "16": [
+        "USP35",
+        "CD3D",
+        "IL32",
+        "CD3E",
+        "JUNB",
+        "ACTB",
+        "UBC",
+        "CORO1A",
+        "EEF1A1",
+        "AES"
+      ],
+      "17": [
+        "LINC00937",
+        "IL32",
+        "BATF3",
+        "CD3D",
+        "CD3E",
+        "JUNB",
+        "B2M",
+        "TMSB4X",
+        "S100A6",
+        "SEPT9"
+      ],
+      "18": [
+        "HOMER3",
+        "FXYD5",
+        "S100A4",
+        "IL32",
+        "RPL10",
+        "EEF1A1",
+        "VIM",
+        "LTB",
+        "B2M",
+        "HSPA8"
+      ],
+      "19": [
+        "HES4",
+        "RPL4",
+        "RPS2",
+        "EEF1A1",
+        "RPL3",
+        "RPS6",
+        "JUNB",
+        "RPL5",
+        "TMEM66",
+        "RPL10"
+      ],
+      "2": [
+        "RPL3",
+        "RPS3A",
+        "EEF1A1",
+        "RPS6",
+        "RPL10",
+        "RPL7",
+        "RPL4",
+        "RPS2",
+        "RPL13",
+        "RPS4X"
+      ],
+      "20": [
+        "NOL3",
+        "LTB",
+        "RPS3",
+        "IL32",
+        "TRADD",
+        "IFITM1",
+        "PSME1",
+        "RPL10",
+        "EEF1A1",
+        "EEF1D"
+      ],
+      "21": [
+        "RPS27",
+        "RPS14",
+        "RPS5",
+        "RPS18",
+        "RPS15A",
+        "RPS12",
+        "RPL31",
+        "RPS19",
+        "RPS6",
+        "RPL18A"
+      ],
+      "22": [
+        "ADM",
+        "IL7R",
+        "CD3D",
+        "IER2",
+        "RPL29",
+        "LCK",
+        "RPSAP58",
+        "FXYD5",
+        "RPL13",
+        "RPS3"
+      ],
+      "3": [
+        "CD74",
+        "HLA-DRA",
+        "CD79A",
+        "HLA-DRB1",
+        "HLA-DPB1",
+        "HLA-DPA1",
+        "CD79B",
+        "CD37",
+        "HLA-DRB5",
+        "HLA-DQA1"
+      ],
+      "4": [
+        "S100A4",
+        "IL32",
+        "CD52",
+        "RPL41",
+        "RPS27",
+        "RPL36",
+        "RPS18",
+        "LTB",
+        "S100A6",
+        "S100A10"
+      ],
+      "5": [
+        "GNLY",
+        "NKG7",
+        "TYROBP",
+        "GZMA",
+        "CST7",
+        "FCER1G",
+        "GZMB",
+        "MALAT1",
+        "CLIC3",
+        "KLRB1"
+      ],
+      "6": [
+        "RPL3",
+        "RPL10",
+        "RPS2",
+        "RPL13",
+        "EEF1A1",
+        "RPS6",
+        "RPL4",
+        "RPL5",
+        "EEF1D",
+        "RPS3"
+      ],
+      "7": [
+        "CCL5",
+        "NKG7",
+        "GZMK",
+        "IL32",
+        "GZMA",
+        "LYAR",
+        "HLA-B",
+        "CST7",
+        "MALAT1",
+        "B2M"
+      ],
+      "8": [
+        "RPS24",
+        "PRSS57",
+        "RP11-620J15.3",
+        "ZFAS1",
+        "SERPINB1",
+        "RPL37A",
+        "AIF1",
+        "HSP90AB1",
+        "RPS23",
+        "HINT1"
+      ],
+      "9": [
+        "IL32",
+        "HLA-A",
+        "B2M",
+        "ACTB",
+        "PFN1",
+        "SH3BGRL3",
+        "S100A4",
+        "HLA-B",
+        "ARHGDIB",
+        "TMSB4X"
+      ]
+    }
+  }
+}
