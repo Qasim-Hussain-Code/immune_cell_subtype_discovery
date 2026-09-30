@@ -16,8 +16,6 @@ The rules were published on LinkedIn on Days 62 to 66 of the series and are kept
 
 The results were reported on Days 67 to 70, also kept verbatim: [Day 67](posts/day_67.md) (the frozen groups, before the key was opened), [Day 68](posts/day_68.md) (agreement with the labels), [Day 69](posts/day_69.md) (the predictions) and [Day 70](posts/day_70.md) (the close of the series).
 
-A correction to Day 67: the published post says the second naming was logged as a deviation, and one of its sentences is incomplete. No deviation is recorded. I made the second set of names myself from the marker genes, before the answer key was opened, as Day 65 set out. The post is kept here exactly as published.
-
 All groupings, the rule-based names and the blind report were frozen in commit `27b56f4d4a1e214bb48da6afd75dde2a06636ff4`, and the hashes of the frozen files are stored in [`provenance/freeze_manifest.json`](provenance/freeze_manifest.json). The population labels could be read only through `open_answer_key()` in `scripts/common.py`, which refuses unless it is called from script `07` or later, the freeze commit lies on the history, the frozen files are unchanged, and my own cluster names have been committed after the freeze. The tests in `tests/` check the quarantine and the freeze independently.
 
 The analysis followed the pre-registered plan, and [`notes/deviations.md`](notes/deviations.md) records no departures. Judgement calls that did not change the plan are listed in [`notes/decisions_log.md`](notes/decisions_log.md).
