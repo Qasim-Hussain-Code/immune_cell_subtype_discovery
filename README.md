@@ -24,7 +24,7 @@ The analysis followed the pre-registered plan, and [`notes/deviations.md`](notes
 
 Zheng GXY et al. Massively parallel digital transcriptional profiling of single cells. Nature Communications 8:14049 (`2017`), doi `10.1038/ncomms14049`. The data are ten populations of peripheral blood mononuclear cells from a single donor, released by 10x Genomics (Cell Ranger `1.1.0`, reference `hg19`, GemCode 3' v1 chemistry) under the `CC BY 4.0` licence. I used each population's filtered gene-barcode matrix as released: 94,655 cells and 32,738 genes, with no additional cell filtering, doublet removal, batch correction or downsampling.
 
-The populations were enriched with antibody-coated beads; flow cytometry was used afterwards only to measure purity, and the cells were not sorted by flow cytometry. The labels therefore carry known weaknesses, which I report rather than correct:
+The populations were enriched with antibody-coated beads; flow cytometry was used afterwards only to measure purity, and the cells were not sorted by flow cytometry. The labels therefore carry known limitations, which I report rather than correct:
 
 - The CD4+ helper population was enriched on CD4 alone, so it also contains naive, memory and regulatory CD4 T cells.
 - The CD8+/CD45RA+ naive cytotoxic population is nested within the CD8+ cytotoxic population, and CD45RA+ CD8 T cells include terminally differentiated effector memory cells.
