@@ -31,7 +31,7 @@ def main():
         table[key] = dict(facts, tenx_name=TENX_NAMES[key], lineage=cfg["data"]["populations"][key], reads_per_cell_approx=True)
     payload = {
         "chapter": cfg["project"]["chapter"],
-        "days_referenced": [2, 48, 61, 62, 63, 64, 65, 66],
+        "days_referenced": [2, 48, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70],
         "citation": {"year": 2017, "volume": 8, "article_number": 14049, "doi": cfg["data"]["doi"]},
         "paper_pbmc_sample": {"n_cells": 68000, "k_used": 10},
         "dataset_pages": table,
